@@ -7,6 +7,8 @@ import PortfolioTwo from '../../../components/portfolio/PortfolioTwo';
 import WorkingProcess from '../../../components/services/WorkingProcess';
 import ServiceData from '../../../data/Services.json';
 import {camelCaseToDashed} from '../../../helpers/utilities';
+import MainInfo from "components/custom/MainInfo"
+import TextProgress from "components/custom/TextProgress"
 
 export async function getStaticPaths() {
     return {
@@ -53,13 +55,15 @@ const ServiceDetails = ({service}) => {
                     isServiceDetails={true}
                 />
 
-                <AboutTwo/>
+                {/* <AboutTwo/> */}
+                <MainInfo data={service.mainInfo} />
+                <TextProgress data={service.textProgress} />
 
-                <WorkingProcess process={service.process}/>
+                {/* <WorkingProcess process={service.process}/> */}
 
-                <PortfolioTwo/>
+                {/* <PortfolioTwo/> */}
 
-                <CallToActionOne/>
+                {/* <CallToActionOne/> */}
             </div>
         </Layout>
     );

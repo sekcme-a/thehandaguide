@@ -94,7 +94,7 @@ const Services = () => {
                                     }`}
                                     href="#section1"
                                 >
-                                    Design
+                                    관리자 팀 관리
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -104,7 +104,7 @@ const Services = () => {
                                     }`}
                                     href="#section2"
                                 >
-                                    Development
+                                    게시물 관리
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -166,7 +166,7 @@ const Services = () => {
                     ))}
                 </div>
 
-                <CallToActionOne/>
+                {/* <CallToActionOne/> */}
             </main>
         </Layout>
     );

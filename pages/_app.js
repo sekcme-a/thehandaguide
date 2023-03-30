@@ -6,6 +6,7 @@ import '../assets/css/plugins/font-awesome.css';
 import '../assets/css/plugins/icomoon.css';
 import '../assets/css/plugins/plugins.css';
 import '../assets/scss/style.scss';
+import 'style/custom.css'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

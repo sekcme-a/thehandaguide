@@ -1,0 +1,32 @@
+.text_progress_container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 60px 50px ;
+}
+.text_progress_container .title{
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.text_progress_container .subtitle{
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  color: black;
+}
+.text_progress_container .item_container{
+  margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap ;
+}
+
+.text_progress_container .text{
+  color: black;
+  width: 100%;
+  margin-top: 20px;
+}

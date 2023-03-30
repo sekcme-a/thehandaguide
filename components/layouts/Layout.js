@@ -5,7 +5,7 @@ import ScrollUp from "./ScrollUp";
 const Layout = ({
   layoutSettings = { header: "", footer: "" },
   children,
-  showFooter = true,
+  showFooter = false,
 }) => {
   return (
     <>

@@ -5,7 +5,8 @@ import MainMenu from './MainMenu';
 import MobileMenu from './MobileMenu';
 import SideNav from './SideNav';
 import ThemeSwitcher from './ThemeSwitcher';
-import Logo from '../common/Logo';
+// import Logo from '../common/Logo';
+import Logo from "components/custom/Logo"
 
 const Header = ({headerSetting = {}}) => {
     const [headerSettings, setHeaderSettings] = useState({});
@@ -90,7 +91,7 @@ const Header = ({headerSetting = {}}) => {
 
     return (
         <>
-            <ThemeSwitcher/>
+            {/* <ThemeSwitcher/> */}
 
             <header
                 className={`ax-header haeder-default light-logo-version header-transparent axil-header-sticky`}
@@ -100,22 +101,15 @@ const Header = ({headerSetting = {}}) => {
                         <div className="row align-items-center">
                             <div className={headerSettings.leftColumn}>
                                 <div className="logo">
-                                    <Link href="/home-01">
+                                    <Link href="/">
                                         <a>
-                                            <Logo variant={headerSettings.style === 'four' ? 'two' : 'one'}/>
+                                            {/* <Logo variant={headerSettings.style === 'four' ? 'two' : 'one'}/> */}
+                                            <Logo />
                                         </a>
                                     </Link>
                                 </div>
                             </div>
-                            {headerSettings.style === "two" && (
-                                <div className="col-lg-7 col-xl-6 d-none d-lg-block">
-                                    <div className="mainmenu-wrapepr justify-content-center">
-                                        <nav className="mainmenu-nav d-none d-lg-block">
-                                            <MainMenu/>
-                                        </nav>
-                                    </div>
-                                </div>
-                            )}
+                            
                             <div className={headerSettings.rightColumn}>
                                 <div
                                     className={`mainmenu-wrapepr ${
@@ -129,9 +123,9 @@ const Header = ({headerSetting = {}}) => {
                                         </nav>
                                     )}
 
-                                    <div className="axil-header-extra d-flex align-items-center">
-                                        {(headerSettings.style !== "three" && headerSettings.style !== "four") && (
-                                            <div className="ax-search-area ml--40 ml_sm--10">
+                                    <div className={`axil-header-extra d-flex align-items-center`}>
+                                        {/* {(headerSettings.style !== "three" && headerSettings.style !== "four") && (
+                                            <div className="ax-search-area ml--40 ml_sm--10 hide_menu">
                                                 <button
                                                     className="p-0 border-0 search-trigger"
                                                     onClick={toggleSearch}
@@ -139,10 +133,10 @@ const Header = ({headerSetting = {}}) => {
                                                     <i className="fas fa-search"></i>
                                                 </button>
                                             </div>
-                                        )}
+                                        )} */}
 
-                                        {(headerSettings.style !== "three" && headerSettings.style !== "four") && (
-                                            <div className="ax-hamburger ml--40 ml_sm--10 d-none d-lg-block">
+                                        {/* {(headerSettings.style !== "three" && headerSettings.style !== "four") && (
+                                            <div className="ax-hamburger ml--40 ml_sm--10 d-none d-lg-block ">
                                                 <button
                                                     className="axil-menuToggle ax-hamburger-trigger"
                                                     onClick={toggleSideNav}
@@ -152,10 +146,10 @@ const Header = ({headerSetting = {}}) => {
                                                     <span/>
                                                 </button>
                                             </div>
-                                        )}
+                                        )} */}
 
-                                        {headerSettings.style === "three" && (
-                                            <div className="d-none d-md-block">
+                                        {/* {headerSettings.style === "three" && (
+                                            <div className="d-none d-md-block hide_menu" >
                                                 <ul className="axil-social-icons d-flex liststyle align-items-center">
                                                     <li>
                                                         <a href="#">
@@ -179,10 +173,10 @@ const Header = ({headerSetting = {}}) => {
                                                     </li>
                                                 </ul>
                                             </div>
-                                        )}
+                                        )} */}
 
-                                        {headerSettings.style === "four" && (
-                                            <div className="ax-header-button ml--40 ml_lg--10 d-none d-sm-block">
+                                        {/* {headerSettings.style === "four" && (
+                                            <div className="ax-header-button ml--40 ml_lg--10 d-none d-sm-block hide_menu">
                                                 <Link href="/contact">
                                                     <a className="axil-button btn-solid btn-extra02-color">
                                                         <span className="button-text">Let&lsquo;s Talk</span>
@@ -190,13 +184,13 @@ const Header = ({headerSetting = {}}) => {
                                                     </a>
                                                 </Link>
                                             </div>
-                                        )}
+                                        )} */}
 
                                         <div
                                             className={`${
                                                 headerSettings.style === "three"
                                                     ? "ax-hamburger bg-theme-color ml--40"
-                                                    : "ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20"
+                                                    : "ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20 "
                                             }`}
                                         >
                                             <div

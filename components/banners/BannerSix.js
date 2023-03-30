@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const BannerSix = (
     {
-        title = 'Best solutions for your business',
-        subtitle = 'A quick view of industry specific problems solved with design by the awesome team at Keystroke.',
+        title = '쉽게 프로그램을 제작 및 관리하세요.',
+        subtitle = '더한다 관리자 페이지에 대한 모든 기능을 소개합니다.\n저희 팀은 항상 고객의 요구사항과 목표를 고려하여 맞춤형 솔루션을 제공합니다.',
         bannerStyleClass = 'axil-breadcrumb-area breadcrumb-style-2 pt--170 pb--70 theme-gradient',
         bannerTitleClass = 'page-title mb--20',
         leftColumn = 'col-lg-5 order-2 order-lg-1 mt_md--30 mt_sm--30',
         rightColumn = 'col-lg-7 order-1 order-lg-2',
-        bannerImageOne = '/images/others/keystoke-image-1.png',
+        bannerImageOne = '/images/others/screenshot.png',
         bannerImageTwo = '/images/others/keystoke-image-2.svg',
         shapeImage = '/images/slider/single-service-02.png',
         isServiceDetails = false,
@@ -24,7 +24,7 @@ const BannerSix = (
                         <div className="inner">
                             <div className="content">
                                 <h1 className={bannerTitleClass}>{title}</h1>
-                                <p className="subtitle-2">{subtitle}</p>
+                                <p className="subtitle-2 preline keep-all">{subtitle}</p>
                             </div>
                         </div>
                     </div>
@@ -34,15 +34,15 @@ const BannerSix = (
                                 <div className="thumbnail">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                                         <Image
-                                            width={370}
-                                            height={466}
+                                            width={320}
+                                            height={486}
                                             className="paralax-image"
                                             src={bannerImageOne}
                                             alt="Keystoke Images"
                                         />
                                     </Tilt>
                                 </div>
-                                <div className="image-group">
+                                {/* <div className="image-group">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                                         <Image
                                             width={267}
@@ -52,7 +52,7 @@ const BannerSix = (
                                             alt="Keystoke Images"
                                         />
                                     </Tilt>
-                                </div>
+                                </div> */}
                                 <div className="shape-group">
                                     <div className="shape shape-1">
                                         <i className="icon icon-breadcrumb-1"/>

@@ -58,14 +58,17 @@ const ServiceCardOne = (
                                 <Link
                                     href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}>{data.title}</Link>
                             </h4>
-                            <p>{data.description}</p>
+                            <p className='keep-all'>{data.description}</p>
+                            <div className={`role_container`}>
+                                <div className={`role  ${data.role}`}>{data.role}</div>
+                            </div>
                             <Link
                                 className="axil-button"
                                 data-hover="Learn More"
                                 href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}
                             >
                                 <a className="axil-button">
-                                    Learn More
+                                    자세히 보기
                                 </a>
                             </Link>
                         </div>

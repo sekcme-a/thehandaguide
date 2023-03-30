@@ -1,0 +1,34 @@
+.preline{
+  white-space:pre-line;
+}
+.keep-all{
+  word-break: keep-all;
+}
+.role_container{
+  /* margin-top: -20px; */
+  margin-bottom: 30px;
+}
+.role{
+
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 1px 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.role.common{
+  background-color: gray;
+}
+.role.high{
+  background-color: blue;
+}
+.role.super{
+  background-color: black;
+}
+
+@media (min-width: 991px){
+  .hide_menu{
+    display: none;
+  }
+}

@@ -3,7 +3,9 @@ import MainMenuData from '../../data/MainMenu.json';
 
 const MainMenu = () => {
     return (
-        <ul className="mainmenu">
+
+        //custom
+        <ul className="mainmenu" style={{marginRight:"80px"}}>
             {MainMenuData?.map((menu, menuIndex) => (
                 <li
                     className={menu.hasChildren ? "has-dropdown" : ""}
