@@ -107,7 +107,7 @@ const Services = () => {
                                     게시물 관리
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a
                                     className={`nav-link smoth-animation ${
                                         activeServiceSection === "section3" ? "active" : ""
@@ -146,7 +146,7 @@ const Services = () => {
                                 >
                                     Content strategy
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
 
