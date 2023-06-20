@@ -27,7 +27,7 @@
     "react-parallax-tilt": "^1.7.44",
     "react-player": "^2.10.1",
     "react-slick": "^0.29.0",
-    "sass": "^1.60.0",
+    "sass": "^1.63.4",
     "sharp": "^0.31.1",
     "slick-carousel": "^1.8.1"
   },

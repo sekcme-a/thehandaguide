@@ -12,12 +12,23 @@ const MainInfo = ({data}) => {
       }
       <div>
         {data.step.map((item, index) => {
-          return(
-            <div key={index} className={styles.item_container}>
-              {item.img && <Image src={item.img} alt="사진" width={item.width} height={item.height} style={{marginTop:"50px"}} />}
-              <div className={styles.text}>{data.list==="true" && `${index+1}. `} {item.text}</div>
-            </div>
-          )
+          if(item.url)
+            return(
+              <div key={index} className={styles.item_container}>
+                <div className={item.fontWeight==="bold" ? styles.bold_text : styles.text}>{data.list==="true" && `${index+1}. `}{item.text}</div>
+                <div className={styles.url_container}>
+                  <a href={item.url}>여기</a><p>를 눌러 해당 페이지로 이동</p>
+                </div>
+              </div>
+            )
+          else 
+            return(
+              <div key={index} className={styles.item_container}>
+                {item.img && <Image src={item.img} alt="사진" width={item.width} height={item.height} style={{marginTop:"50px", marginBottom:"15px"}} />}
+                <div className={item.fontWeight==="bold" ? styles.bold_text : styles.text}>{data.list==="true" && `${index+1}. `}{item.text}</div>
+                
+              </div>
+            )
         })}
       </div>
     </div>

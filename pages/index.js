@@ -94,7 +94,7 @@ const Services = () => {
                                     }`}
                                     href="#section1"
                                 >
-                                    관리자 팀 관리
+                                    더한다 소개
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -104,17 +104,17 @@ const Services = () => {
                                     }`}
                                     href="#section2"
                                 >
-                                    게시물 관리
+                                    사용자 관리
                                 </a>
                             </li>
-                            {/* <li className="nav-item">
+                            <li className="nav-item">
                                 <a
                                     className={`nav-link smoth-animation ${
                                         activeServiceSection === "section3" ? "active" : ""
                                     }`}
                                     href="#section3"
                                 >
-                                    Online marketing
+                                    게시물 관리
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -124,7 +124,7 @@ const Services = () => {
                                     }`}
                                     href="#section4"
                                 >
-                                    Business
+                                    팀 관리
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -134,7 +134,7 @@ const Services = () => {
                                     }`}
                                     href="#section5"
                                 >
-                                    Technology
+                                    메세지 채팅
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -144,9 +144,20 @@ const Services = () => {
                                     }`}
                                     href="#section6"
                                 >
-                                    Content strategy
+                                    섹션 관리
                                 </a>
-                            </li> */}
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section7" ? "active" : ""
+                                    }`}
+                                    href="#section7"
+                                >
+                                    센터문의 관리
+                                </a>
+                            </li>
+                         
                         </ul>
                     </nav>
 
