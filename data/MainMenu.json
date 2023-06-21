@@ -5,9 +5,21 @@
     "url": "/",
     "hasChildren": true,
     "clildrens": [
-      { "id": 1, "title": "관리자 팀 관리", "url": "/#section1" },
-      {"id": 2, "title":"게시물 관리", "url":"/#section2"}
+      { "id": 1, "title": "더한다 소개", "url": "/#section1" },
+      {"id": 2, "title":"사용자 관리", "url":"/#section2"},
+      {"id": 3, "title":"게시물 관리", "url":"/#section3"},
+      {"id": 4, "title":"팀 관리", "url":"/#section4"},
+      {"id": 5, "title":"메세지 채팅", "url":"/#section5"},
+      {"id": 6, "title":"섹션 관리", "url":"/#section6"},
+      {"id": 7, "title":"센터문의 관리", "url":"/#section7"}
+
     ]
+  },
+  {
+    "id": 2,
+    "title":"Pricing",
+    "url":"/pricing",
+    "hasChildren": false
   }
   
 ]

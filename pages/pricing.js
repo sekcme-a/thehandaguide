@@ -10,7 +10,7 @@ const Pricing = () => {
   return (
     <Layout>
       <Head>
-        <title>Pricing || Keystroke Creative Agency Bootstrap 5 Template</title>
+        <title>Pricing || 더한다 가이드</title>
       </Head>
 
       <Breadcrumb title="Pricing" current="Pricing" />
@@ -41,7 +41,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="axil-faq-area ax-section-gap bg-color-white">
+        {/* <div className="axil-faq-area ax-section-gap bg-color-white">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -146,9 +146,9 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <CallToActionOne />
+        {/* <CallToActionOne /> */}
       </main>
     </Layout>
   );

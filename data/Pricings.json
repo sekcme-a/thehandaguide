@@ -1,56 +1,64 @@
 [
   {
     "id": 1,
-    "title": "Small Business",
-    "subtitle": "A beautiful, simple website",
-    "currency": "$",
+    "title": "기본형",
+    "subtitle": "최소 비용으로 좋은 효율을 볼 수 있습니다.",
+    "currency": "₩",
     "price": {
-      "monthly": 46,
-      "yearly": 552
+      "monthly": "5만",
+      "yearly": "55만"
     },
-    "subtitleTwo": "100% money back guarantee",
+    "subtitleTwo": "소형 기업에 적합합니다.",
     "features": [
-      "10 Pages Responsive Website",
-      "5 PPC Campaigns",
-      "10 SEO Keywords",
-      "5 Facebook Camplaigns",
-      "2 Video Camplaigns"
+      "프로그램, 설문조사 및 공지사항 등록",
+      "HDD(저장된 용량) 25GB",
+      "매달 알림 포인트 5000p 제공\n(알림 1회당 8p 차감)",
+      "최대 사용자 수 300명",
+      "매달 맞춤 유지보수 20p 제공"
     ]
   },
   {
     "id": 2,
-    "title": "Medium business",
-    "subtitle": "A beautiful, simple website",
-    "currency": "$",
+    "title": "실속형",
+    "subtitle": "가장 효율적인 상품, 여러 기능을 추가로 이용하실 수 있습니다.",
+    "currency": "₩",
     "price": {
-      "monthly": 99,
-      "yearly": 499
+      "monthly": "15만",
+      "yearly": "160만"
     },
-    "subtitleTwo": "100% money back guarantee",
+    "subtitleTwo": "일반 기업에 적합합니다.",
     "features": [
-      "20 Pages Responsive Website",
-      "Unlimited PPC Campaigns",
-      "Unlimited SEO Keywords",
-      "Unlimited Facebook",
-      "Unlimited Video Camplaigns"
+      "프로그램, 설문조사 및 공지사항 등록",
+      "HDD(저장된 용량) 50GB",
+      "매달 알림 포인트 30000p 제공\n(알림 1회당 8p 차감)",
+      "최대 사용자 수 1500명",
+      "팀 및 프로그램 스케쥴 기능",
+      "분석 그래프 제공",
+      "프로그램 템플릿 지원",
+      "매달 맞춤 유지보수 100p 제공"
     ]
   },
   {
     "id": 3,
-    "title": "Corporate Business",
-    "subtitle": "A beautiful, simple website",
-    "currency": "$",
+    "title": "전문가형",
+    "subtitle": "제한 없는 이용자 수, 기업 맞춤 기능을 제공해 드립니다.",
+    "currency": "₩",
     "price": {
-      "monthly": 199,
-      "yearly": 999
+      "monthly": "맞춤협의",
+      "yearly": "맞춤협의"
     },
-    "subtitleTwo": "100% money back guarantee",
+    "subtitleTwo": "상담을 통해 맞춤화된 서비스를 제공합니다.",
     "features": [
-      "50 Pages Responsive Website",
-      "Unlimited PPC Campaigns",
-      "Unlimited SEO Keywords",
-      "Unlimited Facebook",
-      "Unlimited Video Camplaigns"
+      "프로그램, 설문조사 및 공지사항 등록",
+      "무제한 HDD(저장된 용량)",
+      "무제한 알림 포인트",
+      "맞춤형 기능 제작",
+      "최대 사용자 수 협의",
+      "팀 및 프로그램 스케쥴 기능",
+      "분석 그래프 제공",
+      "프로그램 템플릿 지원",
+      "매달 맞춤 유지보수 제공"
     ]
   }
+ 
 ]
