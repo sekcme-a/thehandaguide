@@ -1,5 +1,6 @@
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
+import Link from "next/link";
 
 const BannerSix = (
     {
@@ -9,7 +10,7 @@ const BannerSix = (
         bannerTitleClass = 'page-title mb--20',
         leftColumn = 'col-lg-5 order-2 order-lg-1 mt_md--30 mt_sm--30',
         rightColumn = 'col-lg-7 order-1 order-lg-2',
-        bannerImageOne = '/images/others/screenshot.png',
+        bannerImageOne = '/images/custom/capture-mainpage.jpeg',
         bannerImageTwo = '/images/others/keystoke-image-2.svg',
         shapeImage = '/images/slider/single-service-02.png',
         isServiceDetails = false,
@@ -25,17 +26,24 @@ const BannerSix = (
                             <div className="content">
                                 <h1 className={bannerTitleClass}>{title}</h1>
                                 <p className="subtitle-2 preline keep-all">{subtitle}</p>
+                                <Link href={`https://thehanda.netlify.app`}>
+                                    <a className="axil-button btn-large btn-transparent" target="_blank">
+                                        <span className="button-text">관리자페이지로 이동</span>
+                                        <span className="button-icon"/>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className={rightColumn}>
                         {!isServiceDetails ? (
-                            <div className="breadcrumb-thumbnail-group with-image-group text-start text-lg-end">
+                            <div className="breadcrumb-thumbnail-group with-image-group text-start text-lg-end custom-for-image">
                                 <div className="thumbnail">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
-                                        <Image
-                                            width={320}
-                                            height={486}
+                                    <Image
+                                            style={{border:"1px solid black", borderRadius:"10px"}}
+                                            width={310}
+                                            height={556}
                                             className="paralax-image"
                                             src={bannerImageOne}
                                             alt="Keystoke Images"
@@ -69,13 +77,13 @@ const BannerSix = (
                             <div className="thumbnail text-start text-lg-end">
                                 <div className="image-group">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
-                                        <Image
-                                            width={370}
-                                            height={466}
-                                            className="image-1 paralax-image"
-                                            src={shapeImage}
-                                            alt="Slider images"
-                                            objectFit="cover"
+                                    <Image
+                                            style={{border:"1px solid black", borderRadius:"10px"}}
+                                            width={310}
+                                            height={556}
+                                            className="paralax-image"
+                                            src={bannerImageOne}
+                                            alt="Keystoke Images"
                                         />
                                     </Tilt>
                                     {showPersonImage && (

@@ -16,6 +16,8 @@ const BannerSix = (
         showPersonImage = true,
     }
 ) => {
+
+
     return (
         <div className={bannerStyleClass}>
             <div className="container">
@@ -30,7 +32,7 @@ const BannerSix = (
                     </div>
                     <div className={rightColumn}>
                         {!isServiceDetails ? (
-                            <div className="breadcrumb-thumbnail-group with-image-group text-start text-lg-end">
+                            <div className="breadcrumb-thumbnail-group with-image-group text-start text-lg-end custom-for-image">
                                 <div className="thumbnail">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9} style={{border:"2px solid rgb(233,233,233)", borderRadius:"10px"}}>
                                         <Image
@@ -67,7 +69,7 @@ const BannerSix = (
                                 </div>
                             </div>
                         ) : (
-                            <div className="thumbnail text-start text-lg-end">
+                            <div className="thumbnail text-start text-lg-end custom-for-image">
                                 <div className="image-group">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                                         <Image
