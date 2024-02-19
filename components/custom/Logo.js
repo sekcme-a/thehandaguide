@@ -7,7 +7,7 @@ const Logo = () => {
       <Image className={styles.logo} src="/logo.png" alt="logo" width={60} height={60}/>
       <div className={styles.text_container}>
         <div className={styles.h1}>더한다</div>
-        <div className={styles.p}>관리자 가이드</div>
+        <div className={styles.p}>TheHanda</div>
       </div>
 
     </div>

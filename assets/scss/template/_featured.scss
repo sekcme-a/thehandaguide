@@ -148,6 +148,16 @@
                     content: "%";
                     right: 0;
                 }
+                &.counter-gae{
+                    &::after{
+                        content: "개";
+                    }
+                }
+                &.counter-hui{
+                    &::after{
+                        content: "회";
+                    }
+                }
                 &.counter-k{
                     &::after{
                         content: "K";

@@ -1,23 +1,28 @@
-import {Html, Head, Main, NextScript} from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-const Document = () => {
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps }
+  }
+
+  render() {
+  
     return (
-        <Html>
-            <Head>
-                <link rel="icon" type="image/x-icon"
-                      href={`${process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH ?? '' : ''}/favicon.ico`}/>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-                    rel="stylesheet"/>
-            </Head>
-            <body>
-            <Main/>
-            <NextScript/>
-            </body>
-        </Html>
+      <Html lang="kr">
+        <Head>
+          <meta charSet="UTF-8" />
+          <link passHref rel="icon" href="/favicon.ico" />
+          <meta name="naver-site-verification" content="fcd6939d5a2a544afe2de373e246bedd86d5702d" />
+          
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     )
+  }
 }
 
-export default Document;
+export default MyDocument

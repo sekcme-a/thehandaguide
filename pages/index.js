@@ -1,186 +1,161 @@
 import Head from 'next/head';
-import {useEffect, useState} from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import CountUp from 'react-countup';
 import {useInView} from 'react-intersection-observer';
-import BannerSix from '../components/banners/BannerSix';
-import CallToActionOne from '../components/call-to-actions/CallToActionOne';
+import BannerSeven from '../components/banners/BannerSeven';
 import Layout from '../components/layouts/Layout';
-import ServiceSection from '../components/services/ServiceSection';
-import ServiceData from '../data/Services.json';
+import ServiceThree from '../components/services/ServiceThree';
+import WorkingProcess from '../components/services/WorkingProcess';
+import TeamOne from '../components/teams/TeamOne';
+import CaseStudyData from '../data/CaseStudies.json';
+import {slugify} from '../helpers/utilities';
+import AndroidIcon from '@mui/icons-material/Android';
+import AppleIcon from '@mui/icons-material/Apple';
+import HeadMeta from 'components/custom/HeadMeta';
 
-const Services = () => {
-    const [activeServiceSection, setActiveServiceSection] = useState("");
-    const [servicesByCategory, setServicesByCategory] = useState([]);
-
-    const getServicesByCategory = () => {
-        const filteredServices = ServiceData.reduce((acc, service) => {
-            const categoryIndex = acc.findIndex(
-                (item) => item.name == service.category
-            );
-
-            if (service.category !== "Default" && service.category !== "Our capabilities" && service.category !== "Our ways" && service.category !== "Our values") {
-                if (categoryIndex > -1) {
-                    acc[categoryIndex].services.push(service);
-                } else {
-                    acc.push({
-                        name: service.category,
-                        services: [service],
-                    });
-                }
-            }
-
-            return acc;
-        }, []);
-
-        setServicesByCategory(filteredServices);
-    };
-
-    const changeActiveSection = (sectionId) => {
-        setActiveServiceSection(sectionId);
-    };
-
-    const handleStickyNav = () => {
-        const scrollNavigationArea = document.querySelector(
-                ".axil-scroll-navigation"
-            ),
-            scrollNav = document.querySelector(".axil-scroll-nav"),
-            sticky = scrollNavigationArea?.offsetTop;
-
-        if (window.pageYOffset >= sticky) scrollNav?.classList.add("is-affixed");
-        else scrollNav?.classList.remove("is-affixed");
-    };
-
-    const removeStickyNav = () => {
-        const scrollNav = document.querySelector(".axil-scroll-nav");
-        scrollNav?.classList.remove("is-affixed");
-    };
-
-    const {ref, inView} = useInView({
-        threshold: 0,
+const About = () => {
+    const [ref, inView] = useInView({
+        threshold: 0.3,
+        triggerOnce: true,
     });
 
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (inView) {
-                handleStickyNav();
-            } else {
-                removeStickyNav();
-            }
-        });
-    }, [inView]);
-
-    useEffect(() => {
-        getServicesByCategory();
-    }, []);
+    const workingProcess = {
+        title: "간편하게 기관들과 소통하세요.",
+        description:
+            "더한다는 기관와 어플 사용자들의 원활한 소통, 편의성등을 제공하기 위해 더욱 노력할 것입니다.",
+        strategies: [
+            {
+                id: 1,
+                title: "프로그램, 설문조사, 공지사항 확인",
+                subtitle: "더한다+",
+                description:
+                    "더이상 까다롭게 여러 홈페이지들을 전전해가며 기관의 게시물들을 확인하지 마세요. 게시물 알림받고 누구보다 빠르고 간편하게 어플내에서 모든 게시물을 확인하세요.",
+                highlightColor: "extra04-color",
+                image: "/images/custom/working1.png",
+            },
+            {
+                id: 2,
+                title: "프로그램 신청/문의/관리",
+                subtitle: "더한다+",
+                description:
+                    "프로그램 신청부터 문의까지, 모두 한개의 어플 내에서 해결하세요. 신청 취소, 프로그램 일정확인, 신청한 프로그램 관리, 알림까지 모두 받아보세요.",
+                highlightColor: "extra05-color",
+                image: "/images/custom/working2.png",
+            },
+            {
+                id: 3,
+                title: "내 일정 확인",
+                subtitle: "더한다+",
+                description:
+                    "내가 신청한 모든 프로그램 정보, 프로그램들의 일정까지 한눈에 확인하세요. ",
+                highlightColor: "extra06-color",
+                image: "/images/custom/working3.png",
+            },
+            {
+                id: 4,
+                title: "기관에게 문의",
+                subtitle: "더한다+",
+                description:
+                    "관심있는 기관에게 바로 문의하세요. 프로그램에 궁금한 점, 기관에 대한 문의 등 언제든지 간편하게 문의를 보내실 수 있습니다.",
+                highlightColor: "extra07-color",
+                image: "/images/custom/working4.png",
+            },
+        ],
+    };
 
     return (
         <Layout>
-            <Head>
-                <title>가이드 | 더한다 가이드</title>
-            </Head>
+            <HeadMeta
+                title="더한다 - 우리가족 행복비서"
+                url="https://thehandaguide.netlify.app"
+            />
 
             <main className="page-wrapper">
-                <BannerSix/>
+                <BannerSeven/>
 
                 <div
                     ref={ref}
-                    className="axil-scroll-navigation-area axil-scroll-navigation position-relative bg-color-white"
+                    className="axil-featured-area ax-section-gap bg-color-white"
                 >
-                    <nav className="axil-scroll-nav navbar navbar-example2">
-                        <ul className="nav nav-pills justify-content-center sidebar__inner">
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section1" ? "active" : ""
-                                    }`}
-                                    href="#section1"
-                                >
-                                    더한다 소개
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section2" ? "active" : ""
-                                    }`}
-                                    href="#section2"
-                                >
-                                    사용자 관리
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section3" ? "active" : ""
-                                    }`}
-                                    href="#section3"
-                                >
-                                    게시물 관리
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section4" ? "active" : ""
-                                    }`}
-                                    href="#section4"
-                                >
-                                    팀 관리
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section5" ? "active" : ""
-                                    }`}
-                                    href="#section5"
-                                >
-                                    메세지 채팅
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section6" ? "active" : ""
-                                    }`}
-                                    href="#section6"
-                                >
-                                    섹션 관리
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className={`nav-link smoth-animation ${
-                                        activeServiceSection === "section7" ? "active" : ""
-                                    }`}
-                                    href="#section7"
-                                >
-                                    센터문의 관리
-                                </a>
-                            </li>
-                         
-                        </ul>
-                    </nav>
+                    <div className="container">
+                        <div className="row d-flex flex-wrap axil-featured row--40">
+                            <div className="col-lg-6 col-xl-6 col-md-12 col-12">
+                                <div className="thumb-inner">
+                                    <div className="thumbnail">
+                                        <Image
+                                            width={801}
+                                            height={712}
+                                            className="image w-100"
+                                            src="/images/custom/screenshot2.png"
+                                            alt="Featured Images"
+                                        />
+                                    </div>
+                                    <div className="shape-group">
+                                        <div className="shape">
+                                            <i className="icon icon-breadcrumb-2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 col-xl-6 col-md-12 col-12 mt_md--40 mt_sm--40">
+                                <div className="inner">
+                                    <div className="section-title text-start">
+                                        <span className="sub-title extra04-color">
+                                          Program
+                                        </span>
+                                        <h2 className="title">
+                                            {/* <Link href={`/case-study/${slugify(CaseStudyData[0].title)}`}> */}
+                                                <a style={{wordBreak:"keep-all"}}>
+                                                    원하는 프로그램을 찾아보고 신청하세요.{" "}
+                                                </a>
+                                            {/* </Link> */}
+                                        </h2>
+                                        <p className="subtitle-2">
+                                            {`관심있는 기관을 선택해 더한다 어플 내에서 정보 확인, 신청, 일정관리까지 한번에 하실 수 있습니다.\n이제 한개의 어플만으로 프로그램 신청부터 참여까지 함께하세요.`}
+                                        </p>
+                                        <Link href={`https://play.google.com/store/apps/details?id=com.zzsoft.thehanda`}>
+                                            <a className="axil-button btn-large btn-transparent">
+                                                <span className="button-text"><AndroidIcon style={{marginRight:"10px"}}/>플레이스토어로 이동</span>
+                                                <span className="button-icon"/>
+                                            </a>
+                                        </Link>
+                                        <div style={{width:"20px", height:"1px"}} />
+                                        <Link href={`https://apps.apple.com/kr/app/%EB%8D%94%ED%95%9C%EB%8B%A4/id1665555435`}>
+                                            <a className="axil-button btn-large btn-transparent" >
+                                                <span className="button-text" ><AppleIcon style={{marginRight:"10px", marginBottom:"5px"}}/>앱스토어로 이동</span>
+                                                <span className="button-icon"/>
+                                            </a>
+                                        </Link>
+                                    </div>
+                                    <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
+                                        <div className="single-counterup counterup-style-1">
+                                            <h3 className="count counter-gae">
+                                                <CountUp start={0} end={inView ? "74" : 0}/>
+                                            </h3>
+                                            <p>누적 프로그램 등록 수</p>
+                                        </div>
 
-                    {servicesByCategory?.map((categoryServices, index) => (
-                        <ServiceSection
-                            key={`service-section-${index}`}
-                            sectionId={`section${index + 1}`}
-                            sectionTitle={categoryServices.name}
-                            sectionSubtitle="services"
-                            sectionBg={
-                                index % 2 === 0 ? "bg-color-white" : "bg-color-lightest"
-                            }
-                            serviceType={categoryServices.name}
-                            services={categoryServices.services}
-                            changeActiveSection={changeActiveSection}
-                        />
-                    ))}
+                                        <div className="single-counterup counterup-style-1">
+                                            <h3 className="count counter-hui">
+                                                <CountUp start={0} end={inView ? "9581" : 0}/>
+                                            </h3>
+                                            <p>누적 방문수</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <WorkingProcess process={workingProcess}/>
 
-                {/* <CallToActionOne/> */}
+                <TeamOne/>
+
+            
             </main>
         </Layout>
     );
 };
 
-export default Services;
+export default About;

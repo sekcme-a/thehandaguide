@@ -1,155 +1,189 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-import CountUp from 'react-countup';
+import {useEffect, useState} from 'react';
 import {useInView} from 'react-intersection-observer';
-import BannerSeven from '../components/banners/BannerSeven';
+import BannerSix from '../components/banners/BannerSix';
+import CallToActionOne from '../components/call-to-actions/CallToActionOne';
 import Layout from '../components/layouts/Layout';
-import ServiceThree from '../components/services/ServiceThree';
-import WorkingProcess from '../components/services/WorkingProcess';
-import TeamOne from '../components/teams/TeamOne';
-import CaseStudyData from '../data/CaseStudies.json';
-import {slugify} from '../helpers/utilities';
+import ServiceSection from '../components/services/ServiceSection';
+import ServiceData from '../data/Services.json';
+import HeadMeta from 'components/custom/HeadMeta';
 
-const About = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.3,
-        triggerOnce: true,
+const Services = () => {
+    const [activeServiceSection, setActiveServiceSection] = useState("");
+    const [servicesByCategory, setServicesByCategory] = useState([]);
+
+    const getServicesByCategory = () => {
+        const filteredServices = ServiceData.reduce((acc, service) => {
+            const categoryIndex = acc.findIndex(
+                (item) => item.name == service.category
+            );
+
+            if (service.category !== "Default" && service.category !== "Our capabilities" && service.category !== "Our ways" && service.category !== "Our values") {
+                if (categoryIndex > -1) {
+                    acc[categoryIndex].services.push(service);
+                } else {
+                    acc.push({
+                        name: service.category,
+                        services: [service],
+                    });
+                }
+            }
+
+            return acc;
+        }, []);
+
+        setServicesByCategory(filteredServices);
+    };
+
+    const changeActiveSection = (sectionId) => {
+        setActiveServiceSection(sectionId);
+    };
+
+    const handleStickyNav = () => {
+        const scrollNavigationArea = document.querySelector(
+                ".axil-scroll-navigation"
+            ),
+            scrollNav = document.querySelector(".axil-scroll-nav"),
+            sticky = scrollNavigationArea?.offsetTop;
+
+        if (window.pageYOffset >= sticky) scrollNav?.classList.add("is-affixed");
+        else scrollNav?.classList.remove("is-affixed");
+    };
+
+    const removeStickyNav = () => {
+        const scrollNav = document.querySelector(".axil-scroll-nav");
+        scrollNav?.classList.remove("is-affixed");
+    };
+
+    const {ref, inView} = useInView({
+        threshold: 0,
     });
 
-    const workingProcess = {
-        title: "Our execution process",
-        description:
-            "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
-        strategies: [
-            {
-                id: 1,
-                title: "Discover",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra04-color",
-                image: "/images/process/process-01.jpg",
-            },
-            {
-                id: 2,
-                title: "Prototype",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra05-color",
-                image: "/images/process/process-02.jpg",
-            },
-            {
-                id: 3,
-                title: "Test",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra06-color",
-                image: "/images/process/process-03.jpg",
-            },
-            {
-                id: 4,
-                title: "Build",
-                subtitle: "our four step process",
-                description:
-                    "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-                highlightColor: "extra07-color",
-                image: "/images/process/process-04.jpg",
-            },
-        ],
-    };
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (inView) {
+                handleStickyNav();
+            } else {
+                removeStickyNav();
+            }
+        });
+    }, [inView]);
+
+    useEffect(() => {
+        getServicesByCategory();
+    }, []);
 
     return (
         <Layout>
-            <Head>
-                <title>About Us || keystroke Creative Agency Bootstrap5 Template</title>
-            </Head>
+           <HeadMeta
+                title="더한다 - 가이드"
+                description="더한다 기관 계정을 위한 가이드입니다. 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. "
+                url="https://thehandaguide.netlify.app/about"
+            />
 
             <main className="page-wrapper">
-                <BannerSeven/>
+                <BannerSix/>
 
                 <div
                     ref={ref}
-                    className="axil-featured-area ax-section-gap bg-color-white"
+                    className="axil-scroll-navigation-area axil-scroll-navigation position-relative bg-color-white"
                 >
-                    <div className="container">
-                        <div className="row d-flex flex-wrap axil-featured row--40">
-                            <div className="col-lg-6 col-xl-6 col-md-12 col-12">
-                                <div className="thumb-inner">
-                                    <div className="thumbnail">
-                                        <Image
-                                            width={801}
-                                            height={712}
-                                            className="image w-100"
-                                            src="/images/featured/featured-image-02.jpg"
-                                            alt="Featured Images"
-                                        />
-                                    </div>
-                                    <div className="shape-group">
-                                        <div className="shape">
-                                            <i className="icon icon-breadcrumb-2"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 col-xl-6 col-md-12 col-12 mt_md--40 mt_sm--40">
-                                <div className="inner">
-                                    <div className="section-title text-start">
-                                        <span className="sub-title extra04-color">
-                                          featured case study
-                                        </span>
-                                        <h2 className="title">
-                                            <Link href={`/case-study/${slugify(CaseStudyData[0].title)}`}>
-                                                <a>
-                                                    Building software for world changers{" "}
-                                                </a>
-                                            </Link>
-                                        </h2>
-                                        <p className="subtitle-2">
-                                            Donec metus lorem, vulputate at sapien sit amet, auctor
-                                            iaculis lorem. In vel hendrerit nisi. Vestibulum eget
-                                            risus velit. Aliquam tristique libero at dui sodales, et
-                                            placerat orci lobortis. Maecenas ipsum neque, elementum id
-                                            dignissim et, imperdiet vitae mauris.
-                                        </p>
-                                        <Link href={`/case-study/${slugify(CaseStudyData[0].title)}`}>
-                                            <a className="axil-button btn-large btn-transparent">
-                                                <span className="button-text">Read Case Study</span>
-                                                <span className="button-icon"/>
-                                            </a>
-                                        </Link>
-                                    </div>
-                                    <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
-                                        <div className="single-counterup counterup-style-1">
-                                            <h3 className="count">
-                                                <CountUp start={0} end={inView ? "15" : 0}/>
-                                            </h3>
-                                            <p>ROI increase</p>
-                                        </div>
+                    <nav className="axil-scroll-nav navbar navbar-example2">
+                        <ul className="nav nav-pills justify-content-center sidebar__inner">
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section1" ? "active" : ""
+                                    }`}
+                                    href="#section1"
+                                >
+                                    더한다 소개
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section2" ? "active" : ""
+                                    }`}
+                                    href="#section2"
+                                >
+                                    사용자 관리
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section3" ? "active" : ""
+                                    }`}
+                                    href="#section3"
+                                >
+                                    게시물 관리
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section4" ? "active" : ""
+                                    }`}
+                                    href="#section4"
+                                >
+                                    팀 관리
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section5" ? "active" : ""
+                                    }`}
+                                    href="#section5"
+                                >
+                                    메세지 채팅
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section6" ? "active" : ""
+                                    }`}
+                                    href="#section6"
+                                >
+                                    섹션 관리
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    className={`nav-link smoth-animation ${
+                                        activeServiceSection === "section7" ? "active" : ""
+                                    }`}
+                                    href="#section7"
+                                >
+                                    센터문의 관리
+                                </a>
+                            </li>
+                         
+                        </ul>
+                    </nav>
 
-                                        <div className="single-counterup counterup-style-1">
-                                            <h3 className="count counter-k">
-                                                <CountUp start={0} end={inView ? "60" : 0}/>
-                                            </h3>
-                                            <p>Monthly website visits</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {servicesByCategory?.map((categoryServices, index) => (
+                        <ServiceSection
+                            key={`service-section-${index}`}
+                            sectionId={`section${index + 1}`}
+                            sectionTitle={categoryServices.name}
+                            sectionSubtitle="services"
+                            sectionBg={
+                                index % 2 === 0 ? "bg-color-white" : "bg-color-lightest"
+                            }
+                            serviceType={categoryServices.name}
+                            services={categoryServices.services}
+                            changeActiveSection={changeActiveSection}
+                        />
+                    ))}
                 </div>
 
-                <ServiceThree/>
-
-                <TeamOne/>
-
-                <WorkingProcess process={workingProcess}/>
+                {/* <CallToActionOne/> */}
             </main>
         </Layout>
     );
 };
 
-export default About;
+export default Services;

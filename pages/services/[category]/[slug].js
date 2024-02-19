@@ -9,6 +9,7 @@ import ServiceData from '../../../data/Services.json';
 import {camelCaseToDashed} from '../../../helpers/utilities';
 import MainInfo from "components/custom/MainInfo"
 import TextProgress from "components/custom/TextProgress"
+import HeadMeta from 'components/custom/HeadMeta';
 
 export async function getStaticPaths() {
     return {
@@ -36,12 +37,10 @@ export async function getStaticProps(context) {
 const ServiceDetails = ({service}) => {
     return (
         <Layout>
-            <Head>
-                <title>
-                    {service.title}
-                </title>
-            </Head>
-
+           <HeadMeta
+                title={`더한다 - ${service.title}`}
+                description={`${service.title} 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. `}
+            />
             <div className="main-wrapper">
                 <BannerSix
                     title={service.title}

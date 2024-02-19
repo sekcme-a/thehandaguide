@@ -15271,7 +15271,7 @@ Axil Case Study
   }
 }
 .axil-case-study .content .inner span.category {
-  color: #737387;
+  color: #595968;
   font-size: 20px;
   line-height: 32px;
   display: inline-block;
@@ -15871,7 +15871,7 @@ Axil Case Study
   margin: 0;
 }
 .axil-pricing-table .pricing-body .inner ul.list-style li {
-  color: #737387;
+  color: #595968;
   font-size: 20px;
   line-height: 50px;
   position: relative;
@@ -17144,7 +17144,7 @@ Breadcrumb Styles
   }
 }
 .axil-breadcrumb-area.breadcrumb-style-2 p {
-  color: #737387;
+  color: #595968;
   font-size: 20px;
   line-height: 32px;
   padding-right: 12%;
@@ -17809,7 +17809,7 @@ ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
   color: #702FFF;
 }
 .single-counterup.counterup-style-1 h3.count::after {
-  content: "%";
+  content: "";
   right: 0;
 }
 .single-counterup.counterup-style-1 h3.count.counter-k::after {
@@ -17999,7 +17999,7 @@ ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
   line-height: 149px;
   display: inline-block;
   opacity: 0.2;
-  color: #737387;
+  color: #595968;
   font-size: 60px;
   position: absolute;
   right: 0;

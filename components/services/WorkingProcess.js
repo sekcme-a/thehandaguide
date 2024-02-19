@@ -38,7 +38,7 @@ const WorkingProcess = ({process}) => {
                                 >
                                     <div className="image paralax-image">
                                         <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
-                                            <Image width={410} height={414} src={strategy.image} alt="Process Images"/>
+                                            <Image width={492} height={497} src={strategy.image} alt="Process Images"/>
                                         </Tilt>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@ const WorkingProcess = ({process}) => {
                                             <span className={`sub-title ${strategy.highlightColor}`}>
                                               {strategy.subtitle}
                                             </span>
-                                            <h2 className="title">{strategy.title}</h2>
+                                            <h2 className="title" style={{wordBreak:"keep-all"}}>{strategy.title}</h2>
                                             <p className="subtitle-2">{strategy.description}</p>
                                         </div>
                                     </div>
