@@ -78,7 +78,7 @@ const Services = () => {
            <HeadMeta
                 title="더한다 - 가이드"
                 description="더한다 기관 계정을 위한 가이드입니다. 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. "
-                url="https://thehandaguide.netlify.app/about"
+                url="https://thehanda.net/about"
             />
 
             <main className="page-wrapper">

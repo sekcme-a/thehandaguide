@@ -13,7 +13,7 @@ const Pricing = () => {
            <HeadMeta
                 title="더한다 - Pricing"
                 description="더한다 기관 계정의 가격입니다. 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. "
-                url="https://thehandaguide.netlify.app/pricing"
+                url="https://thehanda.net/pricing"
             />
 
       <Breadcrumb title="Pricing" current="Pricing" />

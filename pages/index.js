@@ -68,7 +68,7 @@ const About = () => {
         <Layout>
             <HeadMeta
                 title="더한다 - 우리가족 행복비서"
-                url="https://thehandaguide.netlify.app"
+                url="https://thehanda.net"
             />
 
             <main className="page-wrapper">
