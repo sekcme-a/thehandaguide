@@ -97,7 +97,7 @@ const Services = () => {
                                     }`}
                                     href="#section1"
                                 >
-                                    더한다 소개
+                                    회원가입
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -107,7 +107,7 @@ const Services = () => {
                                     }`}
                                     href="#section2"
                                 >
-                                    사용자 관리
+                                    더한다 소개
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -117,7 +117,7 @@ const Services = () => {
                                     }`}
                                     href="#section3"
                                 >
-                                    게시물 관리
+                                    프로그램 유형
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -127,7 +127,7 @@ const Services = () => {
                                     }`}
                                     href="#section4"
                                 >
-                                    팀 관리
+                                    프로그램 생성
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -137,7 +137,7 @@ const Services = () => {
                                     }`}
                                     href="#section5"
                                 >
-                                    메세지 채팅
+                                    프로그램 관리
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -147,7 +147,7 @@ const Services = () => {
                                     }`}
                                     href="#section6"
                                 >
-                                    섹션 관리
+                                    알림 보내기
                                 </a>
                             </li>
                             <li className="nav-item">
@@ -157,7 +157,7 @@ const Services = () => {
                                     }`}
                                     href="#section7"
                                 >
-                                    센터문의 관리
+                                    사용자 데이터 확인
                                 </a>
                             </li>
                          

@@ -8,17 +8,17 @@
             <g id="-Elements/Header">
                 <g id="Logo" transform="translate(315.000000, 40.000000)">
                     <text id="Keystroke-Startup-la" font-family="DMSans-Bold, DM Sans" font-size="20" font-weight="bold" line-spacing="25" fill="#000248">
-                        <tspan x="75" y="24">Keystroke</tspan>
+                        <tspan x="75" y="24">더한다+</tspan>
                         <tspan x="175.14" y="24.5001221" font-family="DMSans-Regular, DM Sans" font-weight="normal"></tspan>
-                        <tspan x="76.16" y="49.5001221" font-family="DMSans-Regular, DM Sans" font-size="18" font-weight="normal">Startup landing template</tspan>
+                        <tspan x="76.16" y="49.5001221" font-family="DMSans-Regular, DM Sans" font-size="18" font-weight="normal">우리가족 행복비서</tspan>
                     </text>
-                    <g id="Favicon">
+                    <!-- <g id="Favicon">
                         <rect id="Base" fill="#702FFF" x="0" y="0" width="60" height="60" rx="14"></rect>
                         <g id="Group-3" transform="translate(15.000000, 11.000000)">
                             <circle id="Oval" stroke="#FFFFFF" stroke-width="7" cx="15" cy="15" r="11.5"></circle>
                             <circle id="Oval-Copy" fill="#FFFFFF" cx="4" cy="34" r="4"></circle>
                         </g>
-                    </g>
+                    </g> -->
                 </g>
             </g>
         </g>
