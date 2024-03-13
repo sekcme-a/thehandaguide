@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BannerSix = (
     {
-        title = '쉽게 프로그램을 제작 및 관리하세요.',
+        title = '쉽게 프로그램을 제작\n및 관리하세요.',
         subtitle = '더한다 관리자 페이지에 대한 모든 기능을 소개합니다.\n저희 팀은 항상 고객의 요구사항과 목표를 고려하여 맞춤형 솔루션을 제공합니다.',
         bannerStyleClass = 'axil-breadcrumb-area breadcrumb-style-2 pt--170 pb--70 theme-gradient',
         bannerTitleClass = 'page-title mb--20',
@@ -24,7 +24,7 @@ const BannerSix = (
                     <div className={leftColumn}>
                         <div className="inner">
                             <div className="content">
-                                <h1 className={bannerTitleClass}>{title}</h1>
+                                <h1 className={bannerTitleClass} style={{wordBreak:"keep-all", whiteSpace:"pre-line"}}>{title}</h1>
                                 <p className="subtitle-2 preline keep-all">{subtitle}</p>
                                 <Link href={`https://thehanda.netlify.app`}>
                                     <a className="axil-button btn-large btn-transparent" target="_blank">
