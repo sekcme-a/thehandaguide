@@ -2,7 +2,7 @@
 Breadcrumb Styles 
 ======================*/
 
-.axil-breadcrumb-area {
+.thd-banner-bcZone {
   .inner {
     position: relative;
     z-index: 1;
@@ -15,7 +15,7 @@ Breadcrumb Styles
 
     // Page Title Styles
     h2 {
-      &.axil-page-title {
+      &.axil-thd-title {
         margin-top: 20px;
         font-size: 50px;
         line-height: 62px;
@@ -32,7 +32,7 @@ Breadcrumb Styles
       }
     }
 
-    .axil-page-title {
+    .axil-thd-title {
       margin-top: 20px;
       font-size: 50px;
       line-height: 62px;
@@ -172,7 +172,7 @@ Breadcrumb Styles
       }
     }
 
-    .page-title {
+    .thd-title {
       @media #{$sm-layout} {
         font-size: 32px !important;
         line-height: 42px !important;
@@ -194,7 +194,7 @@ Breadcrumb Styles
     .thumbnail {
       position: relative;
 
-      .image-group {
+      .thd_imgRoup {
         position: relative;
         padding-right: 118px;
         z-index: 3;
@@ -220,7 +220,7 @@ Breadcrumb Styles
           padding-right: 0;
         }
 
-        .banner-paralax-image-2 {
+        .banner-thdImg_as-2 {
           position: absolute;
           right: 0;
           bottom: 85px;
@@ -273,7 +273,7 @@ Breadcrumb Styles
         }
       }
 
-      .shape-group {
+      .thd_shgp {
         .shape {
           position: absolute;
           top: 50%;
@@ -328,7 +328,7 @@ Breadcrumb Styles
 
     &.team-group-thumb {
       .thumbnail {
-        .image-group {
+        .thd_imgRoup {
           img {
             &.image-1 {
               @media #{$large-mobile} {
@@ -338,7 +338,7 @@ Breadcrumb Styles
           }
         }
 
-        .shape-group {
+        .thd_shgp {
           .shape {
             position: absolute;
             left: 0;
@@ -455,7 +455,7 @@ ul {
 /*-----------------------------
     Breadcrumb Style Two  
 -------------------------------*/
-.breadcrumb-thumbnail-group {
+.thdthgrp {
   position: relative;
   @media #{$md-layout} {
     display: inline-block;
@@ -505,14 +505,14 @@ ul {
     }
   }
 
-  .image-group {
+  .thd_imgRoup {
     position: absolute;
     right: 0;
     bottom: 45px;
     z-index: 3;
   }
 
-  .shape-group {
+  .thd_shgp {
     @media #{$sm-layout} {
       display: none;
     }
@@ -549,7 +549,7 @@ ul {
     }
   }
 
-  &.with-image-group {
+  &.wimgp {
     padding-right: 110px;
     @media #{$md-layout} {
       padding-right: 0;
@@ -558,7 +558,7 @@ ul {
       padding-right: 0;
     }
 
-    .shape-group {
+    .thd_shgp {
       .shape {
         position: absolute;
         right: 50%;
@@ -631,14 +631,14 @@ ul {
     }
   }
 
-  .image-group {
+  .thd_imgRoup {
     position: absolute;
     right: 0;
     bottom: 45px;
     z-index: 3;
   }
 
-  .shape-group {
+  .thd_shgp {
     .shape {
       position: absolute;
       right: 50%;
@@ -662,13 +662,13 @@ ul {
     }
   }
 
-  &.with-image-group {
+  &.wimgp {
     padding-right: 110px;
   }
 }
 
 @media #{$sm-layout} {
-  .axil-breadcrumb-area.breadcrumb-style-2.pt--170.pb--70.theme-gradient {
+  .thd-banner-bcZone.breadcrumb-style-2.pt--170.pb--70.theme-gradient {
     padding-top: 115px;
   }
   .axil-video-wrapper {

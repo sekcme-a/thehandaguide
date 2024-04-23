@@ -2,11 +2,11 @@
     Axil Team Styles 
 -------------------------*/
 
-.axil-team-area {
+.thd_teamZone {
   &.shape-position {
     position: relative;
     z-index: 2;
-    .shape-group {
+    .thd_shgp {
       @media #{$large-mobile} {
         display: none;
       }

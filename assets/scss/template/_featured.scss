@@ -38,7 +38,7 @@
         }
         .section-title {
             p {
-                &.subtitle-2 {
+                &.thdsubt2 {
                     padding: 0;
                     margin-bottom: 40px;
                     @media #{$sm-layout} {
@@ -47,19 +47,19 @@
                 }
             }
             a {
-                &.axil-button {
+                &.thdButtt {
                     margin-bottom: 15px;
                 }
             }
         }
-        .axil-counterup-area {
+        .thd_CountZone {
             margin: 0 -30px;
             margin-bottom: 30px;
             @media #{$sm-layout} {
                 margin: 0 -15px;
                 margin-bottom: 30px;
             }
-            .single-counterup{
+            .thd_soloUp{
                 padding: 0 30px;
                 @media #{$sm-layout} {
                     padding: 0 15px;
@@ -68,9 +68,9 @@
             }
             &.separator-line-vertical{
                 position: relative;
-                .single-counterup{
+                .thd_soloUp{
                     position: relative;
-                    & + .single-counterup{
+                    & + .thd_soloUp{
                         &::after{
                             position: absolute;
                             height: 80px;
@@ -95,10 +95,10 @@
             }
         }
     }
-    .thumb-inner {
+    .thdThin {
         position: relative;
         z-index: 2;
-        .shape-group {
+        .thd_shgp {
             position: absolute;
             bottom: -11%;
             left: -17%;
@@ -130,8 +130,8 @@
 /*----------------------------
     Counterup Styles 
 ----------------------------*/
-.single-counterup {
-    &.counterup-style-1 {
+.thd_soloUp {
+    &.thdCountOne {
         margin-top: 30px;
         @media #{$sm-layout} {
             margin-top: 20px;
@@ -191,12 +191,12 @@
                 animation: 1500ms ease-in-out 0s normal none 1 running fadeInRight;
             }
             a {
-                &.axil-button{
+                &.thdButtt{
                     -webkit-animation: 1700ms ease-in-out 0s normal none 1 running fadeInRight;
                     animation: 1700ms ease-in-out 0s normal none 1 running fadeInRight;
                 }
             }
-            .single-counterup{
+            .thd_soloUp{
                 -webkit-animation: 1800ms ease-in-out 0s normal none 1 running fadeInRight;
                 animation: 1800ms ease-in-out 0s normal none 1 running fadeInRight;
             }

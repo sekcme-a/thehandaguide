@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const WorkingProcess = ({process}) => {
     return (
-        <div className="axil-working-process-area ax-section-gap theme-gradient-4">
+        <div className="thd_workZone ax-section-gap thd_G4">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
@@ -25,8 +25,8 @@ const WorkingProcess = ({process}) => {
                                 key={`strategy-${index}`}
                                 className={
                                     strategy.id % 2 === 0
-                                        ? "axil-working-process mb--100 text-start mb_md--50 mb_sm--40"
-                                        : "axil-working-process mb--100 mb_md--50 mb_sm--40"
+                                        ? "thd_wpo mb--100 text-start mb_md--50 mb_sm--40"
+                                        : "thd_wpo mb--100 mb_md--50 mb_sm--40"
                                 }
                             >
                                 <div
@@ -36,7 +36,7 @@ const WorkingProcess = ({process}) => {
                                             : "thumbnail"
                                     }
                                 >
-                                    <div className="image paralax-image">
+                                    <div className="image thdImg_as">
                                         <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                                             <Image width={492} height={497} src={strategy.image} alt="Process Images"/>
                                         </Tilt>
@@ -51,12 +51,12 @@ const WorkingProcess = ({process}) => {
                                 >
                                     <div className="inner">
                                         <div className="section-title">
-                                            <span className="process-step-number">{strategy.id}</span>
-                                            <span className={`sub-title ${strategy.highlightColor}`}>
+                                            <span className="thd_no">{strategy.id}</span>
+                                            <span className={`thd-stit ${strategy.highlightColor}`}>
                                               {strategy.subtitle}
                                             </span>
                                             <h2 className="title" style={{wordBreak:"keep-all"}}>{strategy.title}</h2>
-                                            <p className="subtitle-2">{strategy.description}</p>
+                                            <p className="thdsubt2">{strategy.description}</p>
                                         </div>
                                     </div>
                                 </div>

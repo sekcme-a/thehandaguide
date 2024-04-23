@@ -1,7 +1,5 @@
-import Head from "next/head";
+
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import CallToActionOne from "../components/call-to-actions/CallToActionOne";
-import SectionTitle from "../components/common/SectionTitle";
 import Layout from "../components/layouts/Layout";
 import PricingTable from "../components/pricings/PricingTable";
 import PricingData from "../data/Pricings.json";
@@ -19,7 +17,7 @@ const Pricing = () => {
       <Breadcrumb title="Pricing" current="Pricing" />
 
       <main className="page-wrappper">
-        <div className="axil-pricing-table-area pricing-shape-position ax-section-gap bg-color-lightest">
+        <div className="thd_pta thd-spasdf ax-section-gap bg-color-lightest">
           <div className="container">
             <div className="row row--25 justify-content-center">
               {PricingData?.map((pricing, index) => (
@@ -31,13 +29,13 @@ const Pricing = () => {
                       ? "axil-pricing-table prcing-style-2 mt--40 active"
                       : "axil-pricing-table prcing-style-2 mt--40 mt_sm--60"
                   }
-                  buttonClass={index === 1 ? "btn-solid" : "btn-transparent"}
+                  buttonClass={index === 1 ? "btn-solid" : "thdBut_invisi"}
                   data={pricing}
                 />
               ))}
             </div>
           </div>
-          <div className="shape-group">
+          <div className="thd_shgp">
             <div className="shape">
               <i className="icon icon-shape-15"></i>
             </div>

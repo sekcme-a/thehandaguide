@@ -7,7 +7,7 @@ const TeamMember = ({team}) => {
         <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
             <div className="axil-team">
                 <div className="inner">
-                    <div className="thumbnail paralax-image">
+                    <div className="thumbnail thdImg_as">
                         <Link href={`/team/${team.id}`}>
                             <a>
                                 <Image width={600} height={560} className="w-100" src={team.image} alt="Team Images"/>

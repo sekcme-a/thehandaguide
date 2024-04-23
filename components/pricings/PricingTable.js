@@ -34,7 +34,7 @@ const PricingTable = ({ column, pricingTableClass, buttonClass, data }) => {
               </div>
             </div>
             {/* <div className="pricing-get-button">
-              <a className={`axil-button btn-large ${buttonClass}`} href="#">
+              <a className={`thdButtt btn-large ${buttonClass}`} href="#">
                 <span className="button-text">Get Started Today</span>
                 <span className="button-icon"></span>
               </a>

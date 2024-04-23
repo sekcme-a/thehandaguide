@@ -24,7 +24,7 @@ const SectionTitle = (
         <div className={`section-title ${textAlignment} ${styleClass}`}>
             {subtitle && (
                 <span
-                    className={`sub-title ${color}`}
+                    className={`thd-stit ${color}`}
                     data-aos="aos-fade-in-up"
                     data-aos-duration="1000"
                 >
@@ -44,7 +44,7 @@ const SectionTitle = (
 
             {description && (
                 <p
-                    className="subtitle-2"
+                    className="thdsubt2"
                     data-aos="aos-fade-in-up"
                     data-aos-duration="1000"
                 >

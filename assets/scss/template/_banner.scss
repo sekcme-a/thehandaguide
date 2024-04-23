@@ -103,7 +103,7 @@ Slider Style One
         }
       }
 
-      .image-group {
+      .thd_imgRoup {
         right: -72px;
         @media #{$sm-layout} {
           right: 0;
@@ -113,7 +113,7 @@ Slider Style One
         }
       }
 
-      .shape-group {
+      .thd_shgp {
         .shape {
           &.shape-1 {
             right: 48%;
@@ -270,11 +270,11 @@ Slider Style One
         margin: 0 -20px;
 
         a {
-          &.axil-button {
+          &.thdButtt {
             margin: 0 20px;
           }
 
-          &.axil-link-button {
+          &.thd_baro_butt {
             @media #{$large-mobile} {
               margin-top: 15px;
             }

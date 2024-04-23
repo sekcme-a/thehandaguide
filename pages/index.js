@@ -5,11 +5,8 @@ import CountUp from 'react-countup';
 import {useInView} from 'react-intersection-observer';
 import BannerSeven from '../components/banners/BannerSeven';
 import Layout from '../components/layouts/Layout';
-import ServiceThree from '../components/services/ServiceThree';
 import WorkingProcess from '../components/services/WorkingProcess';
 import TeamOne from '../components/teams/TeamOne';
-import CaseStudyData from '../data/CaseStudies.json';
-import {slugify} from '../helpers/utilities';
 import AndroidIcon from '@mui/icons-material/Android';
 import AppleIcon from '@mui/icons-material/Apple';
 import HeadMeta from 'components/custom/HeadMeta';
@@ -71,27 +68,28 @@ const About = () => {
                 url="https://thehanda.net"
             />
 
-            <main className="page-wrapper">
+            <main className="thehanda-wrapper">
                 <BannerSeven/>
 
                 <div
                     ref={ref}
-                    className="axil-featured-area ax-section-gap bg-color-white"
+                    className="thdAre ax-section-gap bg-color-white"
                 >
                     <div className="container">
                         <div className="row d-flex flex-wrap axil-featured row--40">
                             <div className="col-lg-6 col-xl-6 col-md-12 col-12">
-                                <div className="thumb-inner">
+                                <div className="thdThin">
                                     <div className="thumbnail">
                                         <Image
                                             width={801}
                                             height={712}
                                             className="image w-100"
                                             src="/images/custom/screenshot2.png"
-                                            alt="Featured Images"
+                                            alt="더한다 스크린샷2"
+                                            loading='lazy'
                                         />
                                     </div>
-                                    <div className="shape-group">
+                                    <div className="thd_shgp">
                                         <div className="shape">
                                             <i className="icon icon-breadcrumb-2"></i>
                                         </div>
@@ -101,7 +99,7 @@ const About = () => {
                             <div className="col-lg-6 col-xl-6 col-md-12 col-12 mt_md--40 mt_sm--40">
                                 <div className="inner">
                                     <div className="section-title text-start">
-                                        <span className="sub-title extra04-color">
+                                        <span className="thd-stit extra04-color">
                                           Program
                                         </span>
                                         <h2 className="title">
@@ -111,32 +109,32 @@ const About = () => {
                                                 </a>
                                             {/* </Link> */}
                                         </h2>
-                                        <p className="subtitle-2">
+                                        <p className="thdsubt2">
                                             {`관심있는 기관을 선택해 더한다 어플 내에서 정보 확인, 신청, 일정관리까지 한번에 하실 수 있습니다.\n이제 한개의 어플만으로 프로그램 신청부터 참여까지 함께하세요.`}
                                         </p>
                                         <Link href={`https://play.google.com/store/apps/details?id=com.zzsoft.thehanda`}>
-                                            <a className="axil-button btn-large btn-transparent">
+                                            <a className="thdButtt btn-large thdBut_invisi">
                                                 <span className="button-text"><AndroidIcon style={{marginRight:"10px"}}/>플레이스토어로 이동</span>
                                                 <span className="button-icon"/>
                                             </a>
                                         </Link>
                                         <div style={{width:"20px", height:"1px"}} />
                                         <Link href={`https://apps.apple.com/kr/app/%EB%8D%94%ED%95%9C%EB%8B%A4/id1665555435`}>
-                                            <a className="axil-button btn-large btn-transparent" >
+                                            <a className="thdButtt btn-large thdBut_invisi" >
                                                 <span className="button-text" ><AppleIcon style={{marginRight:"10px", marginBottom:"5px"}}/>앱스토어로 이동</span>
                                                 <span className="button-icon"/>
                                             </a>
                                         </Link>
                                     </div>
-                                    <div className="axil-counterup-area d-flex flex-wrap separator-line-vertical">
-                                        <div className="single-counterup counterup-style-1">
+                                    <div className="thd_CountZone d-flex flex-wrap separator-line-vertical">
+                                        <div className="thd_soloUp thdCountOne">
                                             <h3 className="count counter-gae">
                                                 <CountUp start={0} end={inView ? "74" : 0}/>
                                             </h3>
                                             <p>누적 프로그램 등록 수</p>
                                         </div>
 
-                                        <div className="single-counterup counterup-style-1">
+                                        <div className="thd_soloUp thdCountOne">
                                             <h3 className="count counter-hui">
                                                 <CountUp start={0} end={inView ? "9581" : 0}/>
                                             </h3>

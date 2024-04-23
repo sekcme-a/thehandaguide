@@ -2,7 +2,6 @@ import Head from 'next/head';
 import {useEffect, useState} from 'react';
 import {useInView} from 'react-intersection-observer';
 import BannerSix from '../components/banners/BannerSix';
-import CallToActionOne from '../components/call-to-actions/CallToActionOne';
 import Layout from '../components/layouts/Layout';
 import ServiceSection from '../components/services/ServiceSection';
 import ServiceData from '../data/Services.json';
@@ -81,7 +80,7 @@ const Services = () => {
                 url="https://thehanda.net/about"
             />
 
-            <main className="page-wrapper">
+            <main className="thehanda-wrapper">
                 <BannerSix/>
 
                 <div

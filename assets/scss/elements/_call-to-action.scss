@@ -14,7 +14,7 @@
         }
     }
     a {
-        &.axil-button{
+        &.thdButtt{
             margin-bottom: 30px;
         }
     }
@@ -50,7 +50,7 @@
     &.shape-position {
         position: relative;
         overflow: hidden;
-        .shape-group {
+        .thd_shgp {
             .shape {
                 position: absolute;
                 &.shape-01 {
@@ -173,7 +173,7 @@
                 }
             }
             a {
-                &.axil-button {
+                &.thdButtt {
                     margin-bottom: 0;
                     @media #{$md-layout} {
                         margin-bottom: 0;

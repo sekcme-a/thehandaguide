@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TeamOne = () => {
     return (
-        <div className="axil-team-area shape-position ax-section-gap bg-color-white">
+        <div className="thd_teamZone shape-position ax-section-gap bg-color-white">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-xl-6">
@@ -14,7 +14,8 @@ const TeamOne = () => {
                                     width={630}
                                     height={514}
                                     src="/images/custom/admin_bg.png"
-                                    alt="Team Images"
+                                    alt="더한다 스텝"
+                                    loading="lazy"
                                 />
                             </div>
                             {/* <div className="total-team-button">
@@ -36,15 +37,15 @@ const TeamOne = () => {
                                     color="extra08-color"
                                     alignment="left"
                                 />
-                                <div className="axil-button-group mt--40">
+                                <div className="thdButtt-group mt--40">
                                     <Link href="/about">
-                                        <a className="axil-button btn-large btn-transparent">
+                                        <a className="thdButtt btn-large thdBut_invisi">
                                             <span className="button-text">기관 가이드 보기</span>
                                             <span className="button-icon"></span>
                                         </a>
                                     </Link>
                                     <Link href="/pricing">
-                                        <a className="axil-button axil-link-button" >
+                                        <a className="thdButtt thd_baro_butt" >
                                             Pricing
                                         </a>
                                     </Link>
@@ -54,7 +55,7 @@ const TeamOne = () => {
                     </div>
                 </div>
             </div>
-            <div className="shape-group">
+            <div className="thd_shgp">
                 <div className="shape shape-1 customOne">
                     <i className="icon icon-shape-06"></i>
                 </div>

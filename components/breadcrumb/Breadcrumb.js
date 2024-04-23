@@ -7,7 +7,7 @@ const Breadcrumb = ({
   current = "Blog",
 }) => {
   return (
-    <div className="axil-breadcrumb-area breadcrumb-style-default pt--170 pb--70 theme-gradient">
+    <div className="thd-banner-bcZone breadcrumb-style-default pt--170 pb--70 theme-gradient">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -20,7 +20,7 @@ const Breadcrumb = ({
                   {current}
                 </li>
               </ul>
-              <h1 className="axil-page-title text-capitalize">{title}</h1>
+              <h1 className="axil-thd-title text-capitalize">{title}</h1>
             </div>
           </div>
         </div>

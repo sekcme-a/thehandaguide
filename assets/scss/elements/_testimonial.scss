@@ -136,7 +136,7 @@
       margin-bottom: 0;
     }
     a {
-      &.axil-link-button {
+      &.thd_baro_butt {
         margin-top: 40px;
         color: $heading-color;
         @extend %transition;
@@ -215,7 +215,7 @@
     }
     .description {
       a {
-        &.axil-link-button {
+        &.thd_baro_butt {
           color: $primary-color;
           &::after {
             width: 100%;

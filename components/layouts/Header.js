@@ -178,7 +178,7 @@ const Header = ({headerSetting = {}}) => {
                                         {/* {headerSettings.style === "four" && (
                                             <div className="ax-header-button ml--40 ml_lg--10 d-none d-sm-block hide_menu">
                                                 <Link href="/contact">
-                                                    <a className="axil-button btn-solid btn-extra02-color">
+                                                    <a className="thdButtt btn-solid btn-extra02-color">
                                                         <span className="button-text">Let&lsquo;s Talk</span>
                                                         <span className="button-icon"/>
                                                     </a>

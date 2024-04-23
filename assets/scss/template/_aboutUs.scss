@@ -4,7 +4,7 @@
 .axil-about-inner {
     .section-title{
         p {
-            &.subtitle-2{
+            &.thdsubt2{
                 padding: 0 14% 0 0;
                 @media #{$lg-layout} {
                     padding: 0;
@@ -24,7 +24,7 @@
 // About Shape Position 
 .axil-shape-position {
     position: relative;
-    .axil-shape-group {
+    .axil-thd_shgp {
         .shape {
             position: absolute;
             bottom: 0;

@@ -67,7 +67,7 @@ const Footer = ({footerSetting = {}}) => {
                                                 </div>
                                                 <div className="button-wrapper">
                                                     <Link href="/contact">
-                                                        <a className="axil-button btn-large btn-solid bgextra07-color">
+                                                        <a className="thdButtt btn-large btn-solid bgextra07-color">
                                                             <span className="button-text">Let&rsquo;s Talk</span>
                                                             <span className="button-icon"/>
                                                         </a>
@@ -107,7 +107,7 @@ const Footer = ({footerSetting = {}}) => {
                                                     <div className="axil-newsletter">
                                                         <form className="newsletter-form" action="#">
                                                             <input type="email" placeholder="Email"/>
-                                                            <a className="axil-button btn-transparent" href="#">
+                                                            <a className="thdButtt thdBut_invisi" href="#">
                                                                 <span className="button-text">Subscribe</span>
                                                                 <span className="button-icon"/>
                                                             </a>

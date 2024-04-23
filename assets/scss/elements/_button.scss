@@ -2,11 +2,11 @@
     Axil Button Styles 
 ========================*/
 
-.axil-button-group {
+.thdButtt-group {
   margin: -10px;
   a,
   button {
-    &.axil-button {
+    &.thdButtt {
       margin: 10px;
     }
   }
@@ -14,7 +14,7 @@
 
 a,
 button {
-  &.axil-button {
+  &.thdButtt {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -35,7 +35,7 @@ button {
       font-size: 14px;
     }
 
-    &.axil-link-button {
+    &.thd_baro_butt {
       color: $heading-color;
       height: auto;
       line-height: initial;
@@ -80,7 +80,7 @@ button {
       }
     }
 
-    &.btn-transparent {
+    &.thdBut_invisi {
       background-color: transparent;
       span {
         &.button-text {

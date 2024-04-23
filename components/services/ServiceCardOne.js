@@ -27,7 +27,7 @@ const ServiceCardOne = (
         <div className={column} data-aos="aos-fade-in-up">
             <Tilt tiltMaxAngleX={7} tiltMaxAngleY={7}>
                 <div
-                    className={`axil-service axil-control paralax-image ${serviceClass} ${textAlignment} ${
+                    className={`axil-service axil-control thdImg_as ${serviceClass} ${textAlignment} ${
                         activeIndex === index ? "active" : ""
                     }`}
                     onMouseEnter={() => changeActive(index)}
@@ -63,11 +63,11 @@ const ServiceCardOne = (
                                 <div className={`role  ${data.role}`}>{data.role}</div>
                             </div>
                             <Link
-                                className="axil-button"
+                                className="thdButtt"
                                 data-hover="Learn More"
                                 href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}
                             >
-                                <a className="axil-button">
+                                <a className="thdButtt">
                                     자세히 보기
                                 </a>
                             </Link>

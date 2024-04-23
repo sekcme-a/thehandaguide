@@ -2,11 +2,11 @@
     Pricing Table Styles 
 ----------------------------*/
 
-.axil-pricing-table-area {
-  &.pricing-shape-position {
+.thd_pta {
+  &.thd-spasdf {
     position: relative;
     z-index: 1;
-    .shape-group {
+    .thd_shgp {
       position: absolute;
       left: 0;
       bottom: 270px;
@@ -111,7 +111,7 @@
         margin-bottom: 10px;
       }
       a {
-        &.axil-button {
+        &.thdButtt {
           width: 100%;
           text-align: center;
           @media #{$md-layout} {
@@ -244,7 +244,7 @@
     }
 
     a {
-      &.axil-button {
+      &.thdButtt {
         color: #ffffff;
         &::before {
           border: 2px solid #702fff;

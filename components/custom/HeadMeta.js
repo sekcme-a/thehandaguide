@@ -8,7 +8,7 @@ const HeadMeta = ({ title, description, url }) => {
         name="description"
         content={
           description ||
-          "우리가족 행복비서 더한다. 더한다를 통해 관심있는 기관과 소통하세요! 프로그램 확인, 신청, 문의, 관리까지 한번에!"
+          "우리가족 행복비서 더한다. 프로그램 확인, 신청, 문의, 관리까지 한번에!"
         }
       />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -16,12 +16,12 @@ const HeadMeta = ({ title, description, url }) => {
       <meta property="og:description"
         content={
         description ||
-        "우리가족 행복비서 더한다. 더한다를 통해 관심있는 기관과 소통하세요! 프로그램 확인, 신청, 문의, 관리까지 한번에!"
+        "우리가족 행복비서 더한다. 프로그램 확인, 신청, 문의, 관리까지 한번에!"
       }/>
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url || "https://thehanda.net"} />
       <meta property="og:image" content={"https://thehanda.net/favicon.ico" } />
-      <meta name="keywords" content="더한다"/>
+      <meta name="keywords" content="더한다,우리가족,행복비서,thehanda"/>
       <meta property="og:article:author" content="더한다" />
     </Head>
   );

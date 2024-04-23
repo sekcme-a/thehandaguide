@@ -88,7 +88,7 @@ Contact Form Style
                 }
             }
         }
-        .shape-group {
+        .thd_shgp {
             @media #{$lg-layout} {
                 display: none;
             }
@@ -165,7 +165,7 @@ Contact Form Style
     &.axil-shape-position {
         position: relative;
         z-index: 2;
-        .shape-group{
+        .thd_shgp{
             @media #{$sm-layout} {
                 display: none;
             }

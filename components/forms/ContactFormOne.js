@@ -44,7 +44,7 @@ const ContactFormOne = () => {
       <Input name="company" label="Company" isClear={isMessageSent} />
       <Input name="phone" label="Phone" isClear={isMessageSent} />
       <div className="form-group">
-        <button className="axil-button btn-large btn-transparent w-100">
+        <button className="thdButtt btn-large thdBut_invisi w-100">
           <span className="button-text">Get Pricing Now</span>
           <span className="button-icon" />
         </button>

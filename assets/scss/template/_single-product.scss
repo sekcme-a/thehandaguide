@@ -3,7 +3,7 @@
 -------------------------------*/
 
 
-.axil-working-process{
+.thd_wpo{
     display: flex;
     align-items: center;
     .thumbnail {
@@ -21,7 +21,7 @@
         .inner {
             .section-title {
                 span {
-                    &.process-step-number {
+                    &.thd_no {
                         box-sizing: border-box;
                         height: 149px;
                         width: 149px;

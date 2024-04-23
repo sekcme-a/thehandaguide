@@ -54,18 +54,18 @@ body.active-dark-mode .ax-search-area .search-trigger i {
   color: #d3d3d4;
 }
 
-body.active-dark-mode a.axil-button,
-body.active-dark-mode button.axil-button {
+body.active-dark-mode a.thdButtt,
+body.active-dark-mode button.thdButtt {
   color: #d3d3d4;
 }
 
-body.active-dark-mode a.axil-button.btn-transparent::before,
-body.active-dark-mode button.axil-button.btn-transparent::before {
+body.active-dark-mode a.thdButtt.thdBut_invisi::before,
+body.active-dark-mode button.thdButtt.thdBut_invisi::before {
   border: 2px solid #4e4e4e;
 }
 
-body.active-dark-mode a.axil-button.btn-transparent span.button-icon,
-body.active-dark-mode button.axil-button.btn-transparent span.button-icon {
+body.active-dark-mode a.thdButtt.thdBut_invisi span.button-icon,
+body.active-dark-mode button.thdButtt.thdBut_invisi span.button-icon {
   border-color: transparent transparent transparent #d3d3d4;
 }
 
@@ -155,11 +155,11 @@ body.active-dark-mode
   border: 4px solid #18191a;
 }
 
-body.active-dark-mode .axil-service.active .inner .content a.axil-button {
+body.active-dark-mode .axil-service.active .inner .content a.thdButtt {
   color: #d3d3d4;
 }
 
-body.active-dark-mode .axil-service .inner .content a.axil-button::after {
+body.active-dark-mode .axil-service .inner .content a.thdButtt::after {
   background: #d3d3d4;
 }
 
@@ -199,11 +199,11 @@ body.active-dark-mode .portfolio .inner .thumb::before {
   border: 4px solid #18191A;
 }
 
-body.active-dark-mode .axil-testimonial .description a.axil-link-button {
+body.active-dark-mode .axil-testimonial .description a.thd_baro_butt {
   color: #d3d3d4;
 }
 
-body.active-dark-mode .axil-testimonial.active .description a.axil-link-button {
+body.active-dark-mode .axil-testimonial.active .description a.thd_baro_butt {
   color: var(--color-primary);
 }
 
@@ -211,7 +211,7 @@ body.active-dark-mode .axil-pricing-table .axil-pricing-inner {
   background: #18191a;
 }
 
-body.active-dark-mode a.axil-button.btn-solid:hover {
+body.active-dark-mode a.thdButtt.btn-solid:hover {
   color: #fff;
 }
 
@@ -296,7 +296,7 @@ body.active-dark-mode .theme-gradient-7 {
   background: #242526;
 }
 
-body.active-dark-mode .axil-error-not-found .shape-group .shape.shape-03 {
+body.active-dark-mode .axil-error-not-found .thd_shgp .shape.shape-03 {
   display: none;
 }
 
@@ -383,7 +383,7 @@ body.active-dark-mode ul.followers-list li a span {
 /*--------------------------
     Home version Four  
 ----------------------------*/
-body.active-dark-mode .theme-gradient-4 {
+body.active-dark-mode .thd_G4 {
   background: #242526;
 }
 
@@ -511,17 +511,17 @@ i {
   color: #d3d3d4;
 }
 
-body.active-dark-mode .axil-pricing-table.active a.axil-button {
+body.active-dark-mode .axil-pricing-table.active a.thdButtt {
   color: #ffffff;
 }
 
 body.active-dark-mode
 .axil-pricing-table.active
-a.axil-button.btn-transparent
+a.thdButtt.thdBut_invisi
 span.button-icon,
 body.active-dark-mode
 .axil-pricing-table.active
-button.axil-button.btn-transparent
+button.thdButtt.thdBut_invisi
 span.button-icon {
   border-color: transparent transparent transparent var(--color-primary);
 }
@@ -558,9 +558,9 @@ body.active-dark-mode .axil-menuToggle span {
 body.active-dark-mode
 .axil-featured
 .inner
-.axil-counterup-area.separator-line-vertical
-.single-counterup
-+ .single-counterup::after {
+.thd_CountZone.separator-line-vertical
+.thd_soloUp
++ .thd_soloUp::after {
   background-color: #4e4e4e;
 }
 
@@ -604,8 +604,8 @@ body.active-dark-mode .axil-pricing-table.active::before {
   border: 4px solid #4e4e4e;
 }
 
-body.active-dark-mode a.axil-button.btn-solid::after,
-body.active-dark-mode button.axil-button.btn-solid::after {
+body.active-dark-mode a.thdButtt.btn-solid::after,
+body.active-dark-mode button.thdButtt.btn-solid::after {
   border: 2px solid var(--color-primary);
 }
 
@@ -654,12 +654,12 @@ body.active-dark-mode .bg-color-white .axil-testimonial .inner::after {
   background: #232427;
 }
 
-body.active-dark-mode a.axil-button.btn-solid.btn-extra07-color::after {
+body.active-dark-mode a.thdButtt.btn-solid.btn-extra07-color::after {
   border: 2px solid #007aff;
 }
 
-body.active-dark-mode a.axil-button.btn-solid:hover span.button-icon,
-body.active-dark-mode button.axil-button.btn-solid:hover span.button-icon {
+body.active-dark-mode a.thdButtt.btn-solid:hover span.button-icon,
+body.active-dark-mode button.thdButtt.btn-solid:hover span.button-icon {
   border-color: transparent transparent transparent #fff;
 }
 
@@ -668,15 +668,15 @@ body.active-dark-mode .icon-breadcrumb-3:before {
 }
 
 body.active-dark-mode
-.axil-working-process
+.thd_wpo
 .content
 .inner
 .section-title
-span.process-step-number {
+span.thd_no {
   border: 1px solid #4e4e4e;
 }
 
-body.active-dark-mode .axil-working-process-area.theme-gradient-4 {
+body.active-dark-mode .thd_workZone.thd_G4 {
   background: #232427;
 }
 
@@ -736,9 +736,9 @@ body.active-dark-mode .axil-team .inner .thumbnail::before {
 }
 
 body.active-dark-mode
-.axil-breadcrumb-area.breadcrumb-style-2
+.thd-banner-bcZone.breadcrumb-style-2
 .thumbnail
-.image-group::before {
+.thd_imgRoup::before {
   border: 4px solid #4e4e4e;
 }
 
@@ -787,14 +787,14 @@ li {
   color: #d3d3d4;
 }
 
-body.active-dark-mode a.axil-button:hover,
-body.active-dark-mode button.axil-button:hover {
+body.active-dark-mode a.thdButtt:hover,
+body.active-dark-mode button.thdButtt:hover {
   color: #ffffff;
 }
 
-body.active-dark-mode a.axil-button.btn-transparent:hover span.button-icon,
+body.active-dark-mode a.thdButtt.thdBut_invisi:hover span.button-icon,
 body.active-dark-mode
-button.axil-button.btn-transparent:hover
+button.thdButtt.thdBut_invisi:hover
 span.button-icon {
   border-color: transparent transparent transparent #ffffff;
 }

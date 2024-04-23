@@ -168,7 +168,7 @@ Preview Page Style Css
 /*----------------------
     Banner Area  
 ------------------------*/
-.pv-page-wrapper {
+.pv-thehanda-wrapper {
   position: relative;
 }
 
@@ -301,7 +301,7 @@ Preview Page Style Css
     }
   }
 
-  .shape-group {
+  .thd_shgp {
     @media #{$md-layout} {
       display: none;
     }
@@ -584,7 +584,7 @@ Single Demo Area
 -----------------------*/
 
 .page-demo-area {
-  .shape-group {
+  .thd_shgp {
     .shape {
       position: absolute;
 
@@ -661,7 +661,7 @@ Single Demo Area
     z-index: 2;
   }
 
-  .shape-group {
+  .thd_shgp {
     .shape {
       position: absolute;
       @media #{$sm-layout} {
@@ -819,7 +819,7 @@ Single Demo Area
     Choose Us Area  
 --------------------------*/
 .choose-us-area {
-  .shape-group {
+  .thd_shgp {
     .shape {
       position: absolute;
 
@@ -1093,7 +1093,7 @@ Single Demo Area
     }
   }
 
-  .shape-group {
+  .thd_shgp {
     .shape {
       position: absolute;
 

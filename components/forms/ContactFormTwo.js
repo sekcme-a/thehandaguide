@@ -67,7 +67,7 @@ const ContactFormTwo = () => {
         </div>
         <div className="col-lg-12">
           <div className="form-group text-end mb--0">
-            <button className="axil-button btn-large btn-transparent text-end">
+            <button className="thdButtt btn-large thdBut_invisi text-end">
               <span className="button-text">Send Message</span>
               <span className="button-icon" />
             </button>

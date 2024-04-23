@@ -1,7 +1,7 @@
 /* ---------------------------
     Single Product Styles  
 -------------------------------*/
-.axil-working-process {
+.thd_wpo {
   display: flex;
   align-items: center;
 
@@ -68,7 +68,7 @@
     .inner {
       .section-title {
         span {
-          &.process-step-number {
+          &.thd_no {
             width: 149px;
             height: 149px;
             position: absolute;
