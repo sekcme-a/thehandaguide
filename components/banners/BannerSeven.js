@@ -36,7 +36,7 @@ const BannerSix = (
                                 <div className="thumbnail">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9} style={{border:"2px solid rgb(233,233,233)", borderRadius:"10px"}}>
                                         <Image
-                                            style={{border:"1px solid black", borderRadius:"10px"}}
+                                            style={{ borderRadius:"10px", overflow: "hidden"}}
                                             width={310}
                                             height={556}
                                             className="thdImg_as"

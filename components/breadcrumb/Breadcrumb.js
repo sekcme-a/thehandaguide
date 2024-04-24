@@ -14,7 +14,7 @@ const Breadcrumb = ({
             <div className="inner">
               <ul className="axil-breadcrumb liststyle d-flex">
                 <li className="axil-breadcrumb-item">
-                  <Link href={rootUrl}>{root}</Link>
+                  <Link legacyBehavior href={rootUrl}>{root}</Link>
                 </li>
                 <li className="axil-breadcrumb-item text-capitalize active" aria-current="page">
                   {current}

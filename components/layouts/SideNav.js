@@ -41,19 +41,19 @@ const SideNav = ({toggleSidenav}) => {
                         <div className="col-lg-5 col-xl-6 col-12">
                             <ul className="main-navigation">
                                 <li>
-                                    <Link href="/home-01">Digital Agency</Link>
+                                    <Link legacyBehavior href="/home-01">Digital Agency</Link>
                                 </li>
                                 <li>
-                                    <Link href="/home-02">Creative Agency</Link>
+                                    <Link legacyBehavior href="/home-02">Creative Agency</Link>
                                 </li>
                                 <li>
-                                    <Link href="/home-03">Personal Portfolio</Link>
+                                    <Link legacyBehavior href="/home-03">Personal Portfolio</Link>
                                 </li>
                                 <li>
-                                    <Link href="/home-04">Home Startup</Link>
+                                    <Link legacyBehavior href="/home-04">Home Startup</Link>
                                 </li>
                                 <li>
-                                    <Link href="/home-05">Corporate Agency</Link>
+                                    <Link legacyBehavior href="/home-05">Corporate Agency</Link>
                                 </li>
                             </ul>
                         </div>

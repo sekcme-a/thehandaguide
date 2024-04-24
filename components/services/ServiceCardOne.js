@@ -55,14 +55,14 @@ const ServiceCardOne = (
                         </div>
                         <div className="content">
                             <h4 className="title">
-                                <Link
+                                <Link legacyBehavior
                                     href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}>{data.title}</Link>
                             </h4>
                             <p className='keep-all'>{data.description}</p>
                             <div className={`role_container`}>
                                 <div className={`role  ${data.role}`}>{data.role}</div>
                             </div>
-                            <Link
+                            <Link legacyBehavior
                                 className="thdButtt"
                                 data-hover="Learn More"
                                 href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}

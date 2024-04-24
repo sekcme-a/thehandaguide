@@ -19,7 +19,7 @@ const TeamOne = () => {
                                 />
                             </div>
                             {/* <div className="total-team-button">
-                                <Link href="/team">
+                                <Link legacyBehavior href="/team">
                                     <a>
                                         <span>20+</span>
                                     </a>
@@ -38,13 +38,13 @@ const TeamOne = () => {
                                     alignment="left"
                                 />
                                 <div className="thdButtt-group mt--40">
-                                    <Link href="/about">
+                                    <Link legacyBehavior href="/about">
                                         <a className="thdButtt btn-large thdBut_invisi">
                                             <span className="button-text">기관 가이드 보기</span>
                                             <span className="button-icon"></span>
                                         </a>
                                     </Link>
-                                    <Link href="/pricing">
+                                    <Link legacyBehavior href="/pricing">
                                         <a className="thdButtt thd_baro_butt" >
                                             Pricing
                                         </a>

@@ -103,7 +103,7 @@ const About = () => {
                                           Program
                                         </span>
                                         <h2 className="title">
-                                            {/* <Link href={`/case-study/${slugify(CaseStudyData[0].title)}`}> */}
+                                            {/* <Link legacyBehavior href={`/case-study/${slugify(CaseStudyData[0].title)}`}> */}
                                                 <a style={{wordBreak:"keep-all"}}>
                                                     원하는 프로그램을 찾아보고 신청하세요.{" "}
                                                 </a>
@@ -112,14 +112,14 @@ const About = () => {
                                         <p className="thdsubt2">
                                             {`관심있는 기관을 선택해 더한다 어플 내에서 정보 확인, 신청, 일정관리까지 한번에 하실 수 있습니다.\n이제 한개의 어플만으로 프로그램 신청부터 참여까지 함께하세요.`}
                                         </p>
-                                        <Link href={`https://play.google.com/store/apps/details?id=com.zzsoft.thehanda`}>
+                                        <Link legacyBehavior href={`https://play.google.com/store/apps/details?id=com.zzsoft.thehanda`}>
                                             <a className="thdButtt btn-large thdBut_invisi">
                                                 <span className="button-text"><AndroidIcon style={{marginRight:"10px"}}/>플레이스토어로 이동</span>
                                                 <span className="button-icon"/>
                                             </a>
                                         </Link>
                                         <div style={{width:"20px", height:"1px"}} />
-                                        <Link href={`https://apps.apple.com/kr/app/%EB%8D%94%ED%95%9C%EB%8B%A4/id1665555435`}>
+                                        <Link legacyBehavior href={`https://apps.apple.com/kr/app/%EB%8D%94%ED%95%9C%EB%8B%A4/id1665555435`}>
                                             <a className="thdButtt btn-large thdBut_invisi" >
                                                 <span className="button-text" ><AppleIcon style={{marginRight:"10px", marginBottom:"5px"}}/>앱스토어로 이동</span>
                                                 <span className="button-icon"/>

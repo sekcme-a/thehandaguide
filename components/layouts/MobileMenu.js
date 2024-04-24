@@ -90,7 +90,7 @@ const MobileMenu = () => {
             <div className="inner">
                 <div className="mobileheader">
                     <div className="logo">
-                        <Link href="/home-01">
+                        <Link legacyBehavior href="/home-01">
                             <a>
                                 <Image
                                     width={250}

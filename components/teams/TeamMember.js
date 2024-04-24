@@ -8,7 +8,7 @@ const TeamMember = ({team}) => {
             <div className="axil-team">
                 <div className="inner">
                     <div className="thumbnail thdImg_as">
-                        <Link href={`/team/${team.id}`}>
+                        <Link legacyBehavior href={`/team/${team.id}`}>
                             <a>
                                 <Image width={600} height={560} className="w-100" src={team.image} alt="Team Images"/>
                             </a>
@@ -16,7 +16,7 @@ const TeamMember = ({team}) => {
                     </div>
                     <div className="content">
                         <h4 className="title">
-                            <Link href={`/team/${team.id}`}>
+                            <Link legacyBehavior href={`/team/${team.id}`}>
                                 <a>{team.name}</a>
                             </Link>
                         </h4>
