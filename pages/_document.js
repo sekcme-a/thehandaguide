@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="UTF-8" />
           <link passHref rel="icon" href="/favicon.ico" />
-          <meta name="naver-site-verification" content="f04f9ca85b84cf1b8cbc9a43ee7b7631b00eec76" />
+          <meta name="naver-site-verification" content="2df15550216fa6edb5393b963de67882420dd222" />
           <meta name="google-site-verification" content="KBEHKYcq9MPiBUkVPEoE-7GtxlS5X60wWGHJPaY-ap4" />
         </Head>
         <body>
