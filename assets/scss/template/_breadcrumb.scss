@@ -8,14 +8,14 @@ Breadcrumb Styles
     z-index: 1;
   }
 
-  &.breadcrumb-style-default {
+  &.thdDefStyle {
     z-index: 2;
     overflow: hidden;
     position: relative;
 
     // Page Title Styles
     h2 {
-      &.axil-thd-title {
+      &.thdT {
         margin-top: 20px;
         font-size: 50px;
         line-height: 62px;
@@ -32,7 +32,7 @@ Breadcrumb Styles
       }
     }
 
-    .axil-thd-title {
+    .thdT {
       margin-top: 20px;
       font-size: 50px;
       line-height: 62px;
@@ -418,7 +418,7 @@ ul {
     margin: -10px;
 
     li {
-      &.axil-breadcrumb-item {
+      &.thd_Bitem {
         font-size: 15px;
         line-height: 24px;
         padding: 10px;
@@ -432,7 +432,7 @@ ul {
           color: $primary-color;
         }
 
-        & + .axil-breadcrumb-item {
+        & + .thd_Bitem {
           &::before {
             position: absolute;
             background: #757589;

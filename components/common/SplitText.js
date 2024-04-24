@@ -27,7 +27,7 @@ export function SplitText({ children }) {
         <span
           ref={ref}
           key={`word-${wordIndex}`}
-          className={`split-word ${word === "<br/>" ? "word-break" : ""}`}
+          className={`thdSTSW ${word === "<br/>" ? "word-break" : ""}`}
         >
           {Array.from(word).map((letter, i) => {
             characterIndex++;

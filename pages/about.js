@@ -40,9 +40,9 @@ const Services = () => {
 
     const handleStickyNav = () => {
         const scrollNavigationArea = document.querySelector(
-                ".axil-scroll-navigation"
+                ".thdSNT"
             ),
-            scrollNav = document.querySelector(".axil-scroll-nav"),
+            scrollNav = document.querySelector(".thdSNSN"),
             sticky = scrollNavigationArea?.offsetTop;
 
         if (window.pageYOffset >= sticky) scrollNav?.classList.add("is-affixed");
@@ -50,7 +50,7 @@ const Services = () => {
     };
 
     const removeStickyNav = () => {
-        const scrollNav = document.querySelector(".axil-scroll-nav");
+        const scrollNav = document.querySelector(".thdSNSN");
         scrollNav?.classList.remove("is-affixed");
     };
 
@@ -75,7 +75,7 @@ const Services = () => {
     return (
         <Layout>
            <HeadMeta
-                title="더한다 - 가이드"
+                title="가이드 - 더한다"
                 description="더한다 기관 계정을 위한 가이드입니다. 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. "
                 url="https://thehanda.net/about"
             />
@@ -85,13 +85,13 @@ const Services = () => {
 
                 <div
                     ref={ref}
-                    className="axil-scroll-navigation-area axil-scroll-navigation position-relative bg-color-white"
+                    className="thdSNTA thdSNT position-relative bg-color-white"
                 >
-                    <nav className="axil-scroll-nav navbar navbar-example2">
-                        <ul className="nav nav-pills justify-content-center sidebar__inner">
+                    <nav className="thdSNSN navbar navbar-example2">
+                        <ul className="nav thdANP justify-content-center sidebar__inner">
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section1" ? "active" : ""
                                     }`}
                                     href="#section1"
@@ -101,7 +101,7 @@ const Services = () => {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section2" ? "active" : ""
                                     }`}
                                     href="#section2"
@@ -111,7 +111,7 @@ const Services = () => {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section3" ? "active" : ""
                                     }`}
                                     href="#section3"
@@ -121,7 +121,7 @@ const Services = () => {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section4" ? "active" : ""
                                     }`}
                                     href="#section4"
@@ -131,7 +131,7 @@ const Services = () => {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section5" ? "active" : ""
                                     }`}
                                     href="#section5"
@@ -141,7 +141,7 @@ const Services = () => {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section6" ? "active" : ""
                                     }`}
                                     href="#section6"
@@ -151,7 +151,7 @@ const Services = () => {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className={`nav-link smoth-animation ${
+                                    className={`nav-link thdASA ${
                                         activeServiceSection === "section7" ? "active" : ""
                                     }`}
                                     href="#section7"

@@ -136,7 +136,7 @@ body.active-dark-mode .axil-blog .content .content-wrap::after {
   background: #18191a;
 }
 
-body.active-dark-mode .axil-pricing-table.active .axil-pricing-inner::after {
+body.active-dark-mode .thdPTAB.active .axil-pricing-inner::after {
   background: #18191a;
 }
 
@@ -207,7 +207,7 @@ body.active-dark-mode .axil-testimonial.active .description a.thd_baro_butt {
   color: var(--color-primary);
 }
 
-body.active-dark-mode .axil-pricing-table .axil-pricing-inner {
+body.active-dark-mode .thdPTAB .axil-pricing-inner {
   background: #18191a;
 }
 
@@ -216,7 +216,7 @@ body.active-dark-mode a.thdButtt.btn-solid:hover {
 }
 
 body.active-dark-mode
-.axil-pricing-table
+.thdPTAB
 .pricing-body
 .inner
 ul.list-style
@@ -323,7 +323,7 @@ body.active-dark-mode .axil-service .inner {
   background: #242526;
 }
 
-body.active-dark-mode .axil-service-area.bg-color-lightest .axil-service .inner {
+body.active-dark-mode .thdSSASA.bg-color-lightest .axil-service .inner {
   background: #18191a;
 }
 
@@ -407,11 +407,11 @@ body.active-dark-mode .theme-gradient-8 {
   background: #242526;
 }
 
-body.active-dark-mode .axil-scroll-navigation .nav {
+body.active-dark-mode .thdSNT .nav {
   background: #18191a;
 }
 
-body.active-dark-mode .axil-scroll-navigation .nav::after {
+body.active-dark-mode .thdSNT .nav::after {
   background: #4e4e4e;
 }
 
@@ -511,16 +511,16 @@ i {
   color: #d3d3d4;
 }
 
-body.active-dark-mode .axil-pricing-table.active a.thdButtt {
+body.active-dark-mode .thdPTAB.active a.thdButtt {
   color: #ffffff;
 }
 
 body.active-dark-mode
-.axil-pricing-table.active
+.thdPTAB.active
 a.thdButtt.thdBut_invisi
 span.button-icon,
 body.active-dark-mode
-.axil-pricing-table.active
+.thdPTAB.active
 button.thdButtt.thdBut_invisi
 span.button-icon {
   border-color: transparent transparent transparent var(--color-primary);
@@ -600,7 +600,7 @@ body.active-dark-mode .axil-testimonial .clint-info-wrapper .client-info span {
   color: #919191;
 }
 
-body.active-dark-mode .axil-pricing-table.active::before {
+body.active-dark-mode .thdPTAB.active::before {
   border: 4px solid #4e4e4e;
 }
 
@@ -609,12 +609,12 @@ body.active-dark-mode button.thdButtt.btn-solid::after {
   border: 2px solid var(--color-primary);
 }
 
-body.active-dark-mode .axil-pricing-table .pricing-header {
+body.active-dark-mode .thdPTAB .pricing-header {
   border-bottom: 1px solid #303031;
 }
 
 body.active-dark-mode
-.axil-pricing-table
+.thdPTAB
 .pricing-header
 .price-wrapper
 .date-option

@@ -21,7 +21,7 @@
 /*--------------------------------
     Start Pricing Table Style  
 ----------------------------------*/
-.axil-pricing-table {
+.thdPTAB {
   position: relative;
   z-index: 2;
   .axil-pricing-inner {
@@ -271,7 +271,7 @@
       }
     }
   }
-  &.prcing-style-2 {
+  &.thdSP2 {
     .axil-pricing-inner {
       padding: 40px 35px;
     }
@@ -287,12 +287,12 @@
   }
 }
 
-.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+.thdPTAB .pricing-header .price-wrapper .date-option select {
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari and Chrome */
   appearance: none;
 }
-.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+.thdPTAB .pricing-header .price-wrapper .date-option select {
   overflow: hidden;
   overflow: -moz-hidden-unscrollable;
   background: url(/images/icons/arrow-icon.png) no-repeat right white;

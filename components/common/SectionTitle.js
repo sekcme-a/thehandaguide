@@ -33,13 +33,13 @@ const SectionTitle = (
             )}
 
             {title && (
-                <h2
+                <h3
                     className={`title ${titleClass}`}
                     data-aos="aos-fade-in-up"
                     data-aos-duration="1000"
                 >
                     <SplitText>{title}</SplitText>
-                </h2>
+                </h3>
             )}
 
             {description && (

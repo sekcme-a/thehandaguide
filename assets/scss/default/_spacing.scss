@@ -6,7 +6,7 @@
     letter-spacing: 2px;
 }
 
-.ax-section-gap{
+.thdsecGap{
     padding: 130px 0;
     @media #{$md-layout} {
         padding: 80px 0;
@@ -25,7 +25,7 @@
     }
 }
 
-.ax-section-gapBottom{
+.thdsecGapBottom{
     padding-bottom: 130px;
     @media #{$md-layout} {
         padding-bottom: 80px; 
@@ -34,7 +34,7 @@
         padding-bottom: 60px ;
     }
 }
-.ax-section-gapTop {
+.thdsecGapTop {
     padding-top: 130px;
     @media #{$md-layout} {
         padding-top: 80px; 

@@ -908,7 +908,7 @@ ul.social-share.social-share-style-2 li a:hover span, ul.social-share.social-sha
 }
 
 .pv-footer-styles .pv-copyright-area .copyright-inner .inner-left .quick-links li a, .single-demo a h5.title, .pv-banner-area .inner a.scroll-down-btn span, .pv-banner-area .inner a.scroll-down-btn, .privacy-policy-area a::after, .axil-single-widget.tags ul.tags-list li a, .axil-single-widget.small-post-wrapper .small-post .content h6 a, .axil-address-list .axil-address p a, .thd-banner-bcZone.breadcrumb-style-2 ul.ax-breadcrumb li a, .axil-accordion--2 .card .card-header .btn.btn-link, .axil-accordion .card .collapse::after, .axil-accordion .card .card-header h5 .btn.btn-link, .axil-case-study .content .inner h4.title a, .axil-call-to-action .callto-action > span a, .axil-blog-list .blog-top .title a, .brand-list li a img, .brand-list li a, .axil-testimonial .description a.thd_baro_butt::after, .axil-testimonial .description a.thd_baro_butt, .axil-testimonial .inner::after, .axil-testimonial, .form-group input[type=submit], .axil-contact-form.contact-form-style-1 .callto-action-wrapper span a, .axil-service.service-bg-gray .inner, .axil-service .inner .content a.thdButtt::after, .axil-service .inner .content a.thdButtt, .axil-service .inner .content h4.title a, ul.followers-list li a span, ul.social-share.style-rounded.bg-color--white li a, ul.social-share.style-rounded li a, ul.social-share.social-share-style-2 li a span, ul.social-share.social-share-style-2 li a i, ul.social-share li a i, ul.social-share li a, .ft-social-share li a, a.thdButtt.thd_baro_butt::after,
-button.thdButtt.thd_baro_butt::after, .axil-scroll-navigation .nav .nav-item a::after, .side-nav .side-nav-inner .side-nav-content .axil-contact-info-inner .axil-contact-info .address p a, .side-nav .side-nav-inner .side-nav-content ul.main-navigation li a, .side-nav .side-nav-inner .form-group button.side-nav-search-btn i, .close-sidenav button.close-button i, ul.mainmenu li.has-dropdown ul.axil-submenu li a, ul.mainmenu li a, #scrollUp, .link-hover a {
+button.thdButtt.thd_baro_butt::after, .thdSNT .nav .nav-item a::after, .side-nav .side-nav-inner .side-nav-content .axil-contact-info-inner .axil-contact-info .address p a, .side-nav .side-nav-inner .side-nav-content ul.main-navigation li a, .side-nav .side-nav-inner .form-group button.side-nav-search-btn i, .close-sidenav button.close-button i, ul.mainmenu li.has-dropdown ul.axil-submenu li a, ul.mainmenu li a, #scrollUp, .link-hover a {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -5388,16 +5388,16 @@ textarea:-ms-input-placeholder {
   letter-spacing: 2px;
 }
 
-.ax-section-gap {
+.thdsecGap {
   padding: 130px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .ax-section-gap {
+  .thdsecGap {
     padding: 80px 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .ax-section-gap {
+  .thdsecGap {
     padding: 60px 0;
   }
 }
@@ -5413,30 +5413,30 @@ textarea:-ms-input-placeholder {
   }
 }
 
-.ax-section-gapBottom {
+.thdsecGapBottom {
   padding-bottom: 130px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .ax-section-gapBottom {
+  .thdsecGapBottom {
     padding-bottom: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .ax-section-gapBottom {
+  .thdsecGapBottom {
     padding-bottom: 60px;
   }
 }
 
-.ax-section-gapTop {
+.thdsecGapTop {
   padding-top: 130px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .ax-section-gapTop {
+  .thdsecGapTop {
     padding-top: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .ax-section-gapTop {
+  .thdsecGapTop {
     padding-top: 60px;
   }
 }
@@ -11935,7 +11935,7 @@ ul.mainmenu li.has-dropdown.active ul.axil-submenu.visible {
 /*-----------------------
     Scroll Navigation  
 -------------------------*/
-.axil-scroll-navigation .nav {
+.thdSNT .nav {
   position: static;
   width: 100%;
   top: 0;
@@ -11949,7 +11949,7 @@ ul.mainmenu li.has-dropdown.active ul.axil-submenu.visible {
   flex-wrap: wrap;
   border: 0 none;
 }
-.axil-scroll-navigation .nav::after {
+.thdSNT .nav::after {
   height: 1px;
   background: #F6F5FA;
   width: 1290px;
@@ -11959,7 +11959,7 @@ ul.mainmenu li.has-dropdown.active ul.axil-submenu.visible {
   left: 50%;
   transform: translateX(-50%);
 }
-.axil-scroll-navigation .nav .nav-item a {
+.thdSNT .nav .nav-item a {
   padding: 30px 10px;
   border-radius: 7px;
   transition: all 0.2s ease-out;
@@ -11970,19 +11970,19 @@ ul.mainmenu li.has-dropdown.active ul.axil-submenu.visible {
   color: #757589;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-scroll-navigation .nav .nav-item a {
+  .thdSNT .nav .nav-item a {
     font-size: 16px;
     padding: 20px 4px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .axil-scroll-navigation .nav .nav-item a {
+  .thdSNT .nav .nav-item a {
     padding: 10px 6px;
     margin: 0 5px;
     font-size: 14px;
   }
 }
-.axil-scroll-navigation .nav .nav-item a::after {
+.thdSNT .nav .nav-item a::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -11991,18 +11991,18 @@ ul.mainmenu li.has-dropdown.active ul.axil-submenu.visible {
   width: 0;
   left: 0;
 }
-.axil-scroll-navigation .nav .nav-item a.active, .axil-scroll-navigation .nav .nav-item a:hover {
+.thdSNT .nav .nav-item a.active, .thdSNT .nav .nav-item a:hover {
   color: #702FFF;
 }
-.axil-scroll-navigation .nav .nav-item a.active::after, .axil-scroll-navigation .nav .nav-item a:hover::after {
+.thdSNT .nav .nav-item a.active::after, .thdSNT .nav .nav-item a:hover::after {
   width: 100%;
 }
-.axil-scroll-navigation .nav.is-affixed {
+.thdSNT .nav.is-affixed {
   border-bottom: 0;
   top: 0 !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.axil-scroll-navigation .nav.is-affixed .sidebar__inner a {
+.thdSNT .nav.is-affixed .sidebar__inner a {
   padding: 30px 10px;
 }
 
@@ -13470,7 +13470,7 @@ Service Style Three
   background: #5BCC9F;
 }
 
-.axil-scroll-nav.navbar.navbar-example2.is-affixed .nav {
+.thdSNSN.navbar.navbar-example2.is-affixed .nav {
   width: 100% !important;
 }
 
@@ -15737,74 +15737,74 @@ Axil Case Study
 /*--------------------------------
     Start Pricing Table Style  
 ----------------------------------*/
-.axil-pricing-table {
+.thdPTAB {
   position: relative;
   z-index: 2;
 }
-.axil-pricing-table .axil-pricing-inner {
+.thdPTAB .axil-pricing-inner {
   padding: 40px;
   background: #FFFFFF;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .axil-pricing-table .axil-pricing-inner {
+  .thdPTAB .axil-pricing-inner {
     padding: 40px 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .axil-pricing-inner {
+  .thdPTAB .axil-pricing-inner {
     padding: 30px 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table .axil-pricing-inner {
+  .thdPTAB .axil-pricing-inner {
     padding: 25px 15px;
   }
 }
-.axil-pricing-table .pricing-header {
+.thdPTAB .pricing-header {
   border-bottom: 1px solid #C7C7D5;
   padding-bottom: 10px;
 }
-.axil-pricing-table .pricing-header h4 {
+.thdPTAB .pricing-header h4 {
   margin-bottom: 10px;
 }
-.axil-pricing-table .pricing-header p {
+.thdPTAB .pricing-header p {
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .pricing-header p {
+  .thdPTAB .pricing-header p {
     margin-bottom: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table .pricing-header p {
+  .thdPTAB .pricing-header p {
     margin-bottom: 15px;
   }
 }
-.axil-pricing-table .pricing-header .price-wrapper {
+.thdPTAB .pricing-header .price-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: flex-end;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .pricing-header .price-wrapper {
+  .thdPTAB .pricing-header .price-wrapper {
     margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table .pricing-header .price-wrapper {
+  .thdPTAB .pricing-header .price-wrapper {
     margin-bottom: 16px;
   }
 }
-.axil-pricing-table .pricing-header .price-wrapper .price {
+.thdPTAB .pricing-header .price-wrapper .price {
   display: flex;
   align-items: flex-end;
 }
-.axil-pricing-table .pricing-header .price-wrapper .price h2 {
+.thdPTAB .pricing-header .price-wrapper .price h2 {
   color: #00D09C;
   font-size: 50px;
   line-height: 41px;
@@ -15812,21 +15812,21 @@ Axil Case Study
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .pricing-header .price-wrapper .price h2 {
+  .thdPTAB .pricing-header .price-wrapper .price h2 {
     font-size: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table .pricing-header .price-wrapper .price h2 {
+  .thdPTAB .pricing-header .price-wrapper .price h2 {
     font-size: 35px;
   }
 }
-.axil-pricing-table .pricing-header .price-wrapper .price span {
+.thdPTAB .pricing-header .price-wrapper .price span {
   color: #757589;
   font-size: 15px;
   line-height: 24px;
 }
-.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+.thdPTAB .pricing-header .price-wrapper .date-option select {
   color: #757589;
   font-size: 15px;
   line-height: 24px;
@@ -15836,41 +15836,41 @@ Axil Case Study
   margin: 0;
   height: auto;
 }
-.axil-pricing-table .pricing-header .pricing-get-button {
+.thdPTAB .pricing-header .pricing-get-button {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .pricing-header .pricing-get-button {
+  .thdPTAB .pricing-header .pricing-get-button {
     text-align: center;
     margin-bottom: 10px;
   }
 }
-.axil-pricing-table .pricing-header .pricing-get-button a.thdButtt {
+.thdPTAB .pricing-header .pricing-get-button a.thdButtt {
   width: 100%;
   text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .pricing-header .pricing-get-button a.thdButtt {
+  .thdPTAB .pricing-header .pricing-get-button a.thdButtt {
     width: auto;
     margin: 0 auto;
     padding: 0 13px;
   }
 }
-.axil-pricing-table .pricing-header span.subtitle {
+.thdPTAB .pricing-header span.subtitle {
   font-size: 15px;
   line-height: 24px;
   display: block;
   text-align: center;
 }
-.axil-pricing-table .pricing-body {
+.thdPTAB .pricing-body {
   margin-top: 20px;
 }
-.axil-pricing-table .pricing-body .inner ul.list-style {
+.thdPTAB .pricing-body .inner ul.list-style {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.axil-pricing-table .pricing-body .inner ul.list-style li {
+.thdPTAB .pricing-body .inner ul.list-style li {
   color: #595968;
   font-size: 20px;
   line-height: 50px;
@@ -15878,24 +15878,24 @@ Axil Case Study
   padding-left: 35px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .axil-pricing-table .pricing-body .inner ul.list-style li {
+  .thdPTAB .pricing-body .inner ul.list-style li {
     font-size: 14px;
     line-height: 34px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .axil-pricing-table .pricing-body .inner ul.list-style li {
+  .thdPTAB .pricing-body .inner ul.list-style li {
     font-size: 14px;
     line-height: 39px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table .pricing-body .inner ul.list-style li {
+  .thdPTAB .pricing-body .inner ul.list-style li {
     font-size: 14px;
     line-height: 40px;
   }
 }
-.axil-pricing-table .pricing-body .inner ul.list-style li::before {
+.thdPTAB .pricing-body .inner ul.list-style li::before {
   position: absolute;
   color: #00D09C;
   font-family: "Font Awesome 5 Pro";
@@ -15907,21 +15907,21 @@ Axil Case Study
   top: 50%;
   transform: translateY(-50%);
 }
-.axil-pricing-table.active {
+.thdPTAB.active {
   background: transparent;
   padding-left: 48px;
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table.active {
+  .thdPTAB.active {
     padding-left: 10px;
   }
 }
-.axil-pricing-table.active .axil-pricing-inner {
+.thdPTAB.active .axil-pricing-inner {
   position: relative;
   z-index: 2;
   background: transparent;
 }
-.axil-pricing-table.active .axil-pricing-inner::before {
+.thdPTAB.active .axil-pricing-inner::before {
   width: 92%;
   height: 92%;
   left: -20px;
@@ -15935,11 +15935,11 @@ Axil Case Study
   transform: perspective(500px) rotateY(-5deg);
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table.active .axil-pricing-inner::before {
+  .thdPTAB.active .axil-pricing-inner::before {
     display: none;
   }
 }
-.axil-pricing-table.active .axil-pricing-inner::after {
+.thdPTAB.active .axil-pricing-inner::after {
   background: #ffffff;
   position: absolute;
   content: "";
@@ -15953,11 +15953,11 @@ Axil Case Study
   transform: perspective(700px) rotateY(-2deg);
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table.active .axil-pricing-inner::after {
+  .thdPTAB.active .axil-pricing-inner::after {
     transform: perspective(0px) rotateY(0deg);
   }
 }
-.axil-pricing-table.active::before {
+.thdPTAB.active::before {
   transform: perspective(500px) rotateY(-1deg);
   position: absolute;
   width: calc(100% - 61px);
@@ -15970,7 +15970,7 @@ Axil Case Study
   box-shadow: 0 0 1px transparent;
 }
 @media only screen and (max-width: 767px) {
-  .axil-pricing-table.active::before {
+  .thdPTAB.active::before {
     width: calc(100% - 35px);
     height: calc(100% - 19px);
     top: 32px;
@@ -15978,42 +15978,42 @@ Axil Case Study
   }
 }
 @media only screen and (max-width: 575px) {
-  .axil-pricing-table.active::before {
+  .thdPTAB.active::before {
     display: none;
   }
 }
-.axil-pricing-table.active a.thdButtt {
+.thdPTAB.active a.thdButtt {
   color: #FFFFFF;
 }
-.axil-pricing-table.active a.thdButtt::before {
+.thdPTAB.active a.thdButtt::before {
   border: 2px solid #702FFF;
 }
-.axil-pricing-table.active a.thdButtt::after {
+.thdPTAB.active a.thdButtt::after {
   background-color: #702FFF;
   opacity: 1;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-.axil-pricing-table.active a.thdButtt span.button-icon {
+.thdPTAB.active a.thdButtt span.button-icon {
   border-color: transparent transparent transparent #ffffff;
 }
-.axil-pricing-table.active a.thdButtt:hover::before {
+.thdPTAB.active a.thdButtt:hover::before {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-.axil-pricing-table.prcing-style-2 .axil-pricing-inner {
+.thdPTAB.thdSP2 .axil-pricing-inner {
   padding: 40px 35px;
 }
-.axil-pricing-table.prcing-style-2.active {
+.thdPTAB.thdSP2.active {
   padding-left: 0;
 }
-.axil-pricing-table.prcing-style-2.active::before {
+.thdPTAB.thdSP2.active::before {
   width: calc(100% - 20px);
   height: calc(100% - 18px);
 }
-.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+.thdPTAB .pricing-header .price-wrapper .date-option select {
   -moz-appearance: none;
   /* Firefox */
   -webkit-appearance: none;
@@ -16021,7 +16021,7 @@ Axil Case Study
   appearance: none;
 }
 
-.axil-pricing-table .pricing-header .price-wrapper .date-option select {
+.thdPTAB .pricing-header .price-wrapper .date-option select {
   overflow: hidden;
   overflow: -moz-hidden-unscrollable;
   background: url(../images/icons/arrow-icon.png) no-repeat right white;
@@ -16991,67 +16991,67 @@ Breadcrumb Styles
   position: relative;
   z-index: 1;
 }
-.thd-banner-bcZone.breadcrumb-style-default {
+.thd-banner-bcZone.thdDefStyle {
   z-index: 2;
   overflow: hidden;
   position: relative;
 }
-.thd-banner-bcZone.breadcrumb-style-default h2.axil-thd-title {
+.thd-banner-bcZone.thdDefStyle h2.thdT {
   margin-top: 20px;
   font-size: 50px;
   line-height: 62px;
 }
 @media only screen and (max-width: 767px) {
-  .thd-banner-bcZone.breadcrumb-style-default h2.axil-thd-title {
+  .thd-banner-bcZone.thdDefStyle h2.thdT {
     margin-top: 10px;
     font-size: 30px;
     line-height: 41px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .thd-banner-bcZone.breadcrumb-style-default h2.axil-thd-title {
+  .thd-banner-bcZone.thdDefStyle h2.thdT {
     margin-top: 8px;
     margin-bottom: 0;
   }
 }
-.thd-banner-bcZone.breadcrumb-style-default .axil-thd-title {
+.thd-banner-bcZone.thdDefStyle .thdT {
   margin-top: 20px;
   font-size: 50px;
   line-height: 62px;
 }
 @media only screen and (max-width: 767px) {
-  .thd-banner-bcZone.breadcrumb-style-default .axil-thd-title {
+  .thd-banner-bcZone.thdDefStyle .thdT {
     margin-top: 10px;
     font-size: 30px;
     line-height: 41px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .thd-banner-bcZone.breadcrumb-style-default .axil-thd-title {
+  .thd-banner-bcZone.thdDefStyle .thdT {
     margin-top: 8px;
     margin-bottom: 0;
   }
 }
 @media only screen and (max-width: 767px) {
-  .thd-banner-bcZone.breadcrumb-style-default .shape-images {
+  .thd-banner-bcZone.thdDefStyle .shape-images {
     display: none;
   }
 }
-.thd-banner-bcZone.breadcrumb-style-default .shape-images .shape {
+.thd-banner-bcZone.thdDefStyle .shape-images .shape {
   position: absolute;
 }
-.thd-banner-bcZone.breadcrumb-style-default .shape-images .shape.shape-1 {
+.thd-banner-bcZone.thdDefStyle .shape-images .shape.shape-1 {
   right: 17%;
   bottom: 14%;
   animation: customOne 2s infinite;
 }
-.thd-banner-bcZone.breadcrumb-style-default .shape-images .shape.shape-2 {
+.thd-banner-bcZone.thdDefStyle .shape-images .shape.shape-2 {
   right: 15%;
   bottom: -6px;
   z-index: -1;
   transform: rotate(3deg);
 }
-.thd-banner-bcZone.breadcrumb-style-default .shape-images .shape.shape-3 {
+.thd-banner-bcZone.thdDefStyle .shape-images .shape.shape-3 {
   left: 0;
   top: 0;
 }
@@ -17389,19 +17389,19 @@ Axil Default Breadcrump
 ul.axil-breadcrumb {
   margin: -10px;
 }
-ul.axil-breadcrumb li.axil-breadcrumb-item {
+ul.axil-breadcrumb li.thd_Bitem {
   font-size: 15px;
   line-height: 24px;
   padding: 10px;
   position: relative;
 }
-ul.axil-breadcrumb li.axil-breadcrumb-item a {
+ul.axil-breadcrumb li.thd_Bitem a {
   text-decoration: none;
 }
-ul.axil-breadcrumb li.axil-breadcrumb-item.active {
+ul.axil-breadcrumb li.thd_Bitem.active {
   color: #702FFF;
 }
-ul.axil-breadcrumb li.axil-breadcrumb-item + .axil-breadcrumb-item::before {
+ul.axil-breadcrumb li.thd_Bitem + .thd_Bitem::before {
   position: absolute;
   background: #757589;
   width: 4px;
@@ -20342,7 +20342,7 @@ Single Demo Area
     .axil-counterup::after,
 .axil-call-to-action.callaction-style-2 .inner::after,
 .thd_wpo .thumbnail .image img,
-.axil-pricing-table.active::before,
+.thdPTAB.active::before,
 .axil-team-details-wrapper .thumbnail::before,
 .thd-banner-bcZone.breadcrumb-style-2 .thumbnail .thd_imgRoup {
       transform: none;
@@ -20353,7 +20353,7 @@ Single Demo Area
     }
 
     .axil-testimonial .inner::after,
-.axil-pricing-table.active .axil-pricing-inner::after,
+.thdPTAB.active .axil-pricing-inner::after,
 .contact-form-style-2::after {
       transform: none;
     }
@@ -20381,7 +20381,7 @@ Single Demo Area
 .axil-counterup::before,
 .axil-testimonial .inner::before,
 .axil-testimonial .clint-info-wrapper .thumb::before,
-.axil-pricing-table.active .axil-pricing-inner::before,
+.thdPTAB.active .axil-pricing-inner::before,
 .axil-blog .content .content-wrap::before,
 #scrollUp::before,
 .contact-form-style-2::before,
@@ -20394,7 +20394,7 @@ Single Demo Area
 .axil-counterup::after,
 .axil-testimonial .inner::after,
 .axil-testimonial .clint-info-wrapper .thumb,
-.axil-pricing-table.active .axil-pricing-inner::after,
+.thdPTAB.active .axil-pricing-inner::after,
 .axil-blog .content .content-wrap::after,
 #scrollUp::after,
 .contact-form-style-2::after,
@@ -20547,7 +20547,7 @@ body.active-dark-mode .axil-blog .content .content-wrap::after {
   background: #18191A;
 }
 
-body.active-dark-mode .axil-pricing-table.active .axil-pricing-inner::after {
+body.active-dark-mode .thdPTAB.active .axil-pricing-inner::after {
   background: #18191A;
 }
 
@@ -20607,7 +20607,7 @@ body.active-dark-mode .axil-testimonial.active .description a.thd_baro_butt {
   color: var(--color-primary);
 }
 
-body.active-dark-mode .axil-pricing-table .axil-pricing-inner {
+body.active-dark-mode .thdPTAB .axil-pricing-inner {
   background: #18191A;
 }
 
@@ -20615,7 +20615,7 @@ body.active-dark-mode a.thdButtt.btn-solid:hover {
   color: #fff;
 }
 
-body.active-dark-mode .axil-pricing-table .pricing-body .inner ul.list-style li {
+body.active-dark-mode .thdPTAB .pricing-body .inner ul.list-style li {
   color: #D3D3D4;
 }
 
@@ -20794,11 +20794,11 @@ body.active-dark-mode .theme-gradient-8 {
   background: #242526;
 }
 
-body.active-dark-mode .axil-scroll-navigation .nav {
+body.active-dark-mode .thdSNT .nav {
   background: #18191A;
 }
 
-body.active-dark-mode .axil-scroll-navigation .nav::after {
+body.active-dark-mode .thdSNT .nav::after {
   background: #4E4E4E;
 }
 
@@ -20865,12 +20865,12 @@ body.active-dark-mode .side-nav .side-nav-inner .side-nav-content .axil-contact-
   color: #D3D3D4;
 }
 
-body.active-dark-mode .axil-pricing-table.active a.thdButtt {
+body.active-dark-mode .thdPTAB.active a.thdButtt {
   color: #FFFFFF;
 }
 
-body.active-dark-mode .axil-pricing-table.active a.thdButtt.thdBut_invisi span.button-icon,
-body.active-dark-mode .axil-pricing-table.active button.thdButtt.thdBut_invisi span.button-icon {
+body.active-dark-mode .thdPTAB.active a.thdButtt.thdBut_invisi span.button-icon,
+body.active-dark-mode .thdPTAB.active button.thdButtt.thdBut_invisi span.button-icon {
   border-color: transparent transparent transparent var(--color-primary);
 }
 
@@ -20924,7 +20924,7 @@ body.active-dark-mode .axil-testimonial .clint-info-wrapper .client-info span {
   color: #919191;
 }
 
-body.active-dark-mode .axil-pricing-table.active::before {
+body.active-dark-mode .thdPTAB.active::before {
   border: 4px solid #4E4E4E;
 }
 
@@ -20933,11 +20933,11 @@ body.active-dark-mode button.thdButtt.btn-solid::after {
   border: 2px solid var(--color-primary);
 }
 
-body.active-dark-mode .axil-pricing-table .pricing-header {
+body.active-dark-mode .thdPTAB .pricing-header {
   border-bottom: 1px solid #303031;
 }
 
-body.active-dark-mode .axil-pricing-table .pricing-header .price-wrapper .date-option select {
+body.active-dark-mode .thdPTAB .pricing-header .price-wrapper .date-option select {
   border-bottom: 1px solid #303031;
 }
 

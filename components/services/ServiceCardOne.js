@@ -56,7 +56,7 @@ const ServiceCardOne = (
                         <div className="content">
                             <h4 className="title">
                                 <Link legacyBehavior
-                                    href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}>{data.title}</Link>
+                                    href={`/services/${camelCaseToDashed(data.categorySlug ?? data.category)}/${data.slug}`}>{data.title}</Link>
                             </h4>
                             <p className='keep-all'>{data.description}</p>
                             <div className={`role_container`}>
@@ -65,7 +65,7 @@ const ServiceCardOne = (
                             <Link legacyBehavior
                                 className="thdButtt"
                                 data-hover="Learn More"
-                                href={`/services/${camelCaseToDashed(data.category)}/${data.slug}`}
+                                href={`/services/${camelCaseToDashed(data.categorySlug?? data.category)}/${data.slug}`}
                             >
                                 <a className="thdButtt">
                                     자세히 보기

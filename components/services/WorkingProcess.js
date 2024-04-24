@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const WorkingProcess = ({process}) => {
     return (
-        <div className="thd_workZone ax-section-gap thd_G4">
+        <div className="thd_workZone thdsecGap thd_G4">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">

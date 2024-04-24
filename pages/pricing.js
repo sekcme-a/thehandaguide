@@ -9,7 +9,7 @@ const Pricing = () => {
   return (
     <Layout>
            <HeadMeta
-                title="더한다 - Pricing"
+                title="Pricing - 더한다"
                 description="더한다 기관 계정의 가격입니다. 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. "
                 url="https://thehanda.net/pricing"
             />
@@ -17,7 +17,7 @@ const Pricing = () => {
       <Breadcrumb title="Pricing" current="Pricing" />
 
       <main className="page-wrappper">
-        <div className="thd_pta thd-spasdf ax-section-gap bg-color-lightest">
+        <div className="thd_pta thd-spasdf thdsecGap bg-color-lightest">
           <div className="container">
             <div className="row row--25 justify-content-center">
               {PricingData?.map((pricing, index) => (
@@ -26,8 +26,8 @@ const Pricing = () => {
                   column="col-lg-4 col-md-6 col-sm-12 col-12"
                   pricingTableClass={
                     index === 1
-                      ? "axil-pricing-table prcing-style-2 mt--40 active"
-                      : "axil-pricing-table prcing-style-2 mt--40 mt_sm--60"
+                      ? "thdPTAB thdSP2 mt--40 active"
+                      : "thdPTAB thdSP2 mt--40 mt_sm--60"
                   }
                   buttonClass={index === 1 ? "btn-solid" : "thdBut_invisi"}
                   data={pricing}
@@ -42,7 +42,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* <div className="axil-faq-area ax-section-gap bg-color-white">
+        {/* <div className="axil-faq-area thdsecGap bg-color-white">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

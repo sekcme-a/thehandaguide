@@ -9,10 +9,11 @@ import HeadMeta from 'components/custom/HeadMeta';
 
 export async function getStaticPaths() {
     return {
-        paths: ServiceData?.map(({slug, category}) => ({
+        paths: ServiceData?.map(({slug, categorySlug}) => ({
             params: {
                 slug: slug,
-                category: camelCaseToDashed(category)
+                category: categorySlug
+                // category: camelCaseToDashed(categorySlug)
             },
         })),
         fallback: false,
@@ -34,8 +35,8 @@ const ServiceDetails = ({service}) => {
     return (
         <Layout>
            <HeadMeta
-                title={`더한다 - ${service.title}`}
-                description={`${service.title} 기관 등록을 통해 게시물 관리, 신청 관리, 사용자 관리, 문의 관리까지 한번에 해결하세요. `}
+                title={`${service.title} - 더한다`}
+                description={`${service.description}`}
             />
             <div className="thd_Wr">
                 <BannerSix
@@ -51,7 +52,7 @@ const ServiceDetails = ({service}) => {
                 />
 
                 {/* <AboutTwo/> */}
-                <MainInfo data={service.mainInfo} />
+                {/* <MainInfo data={service.mainInfo} /> */}
                 <TextProgress data={service.textProgress} />
 
                 {/* <WorkingProcess process={service.process}/> */}

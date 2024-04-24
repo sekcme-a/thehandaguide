@@ -34,7 +34,7 @@ const ServiceSection = (
         <div
             ref={ref}
             id={sectionId}
-            className={`section axil-service-area ${sectionBg} ax-section-gap`}
+            className={`section thdSSASA ${sectionBg} thdsecGap`}
         >
             <div className="container">
                 <div className="row">

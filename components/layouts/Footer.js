@@ -37,7 +37,7 @@ const Footer = ({footerSetting = {}}) => {
                 {!footerSettings.showCopyrightOnly && (
                     <>
                         {footerSettings.style !== "three" ? (
-                            <div className="ft-social-icon-wrapper ax-section-gapTop">
+                            <div className="ft-social-icon-wrapper thdsecGapTop">
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-lg-12">
@@ -80,7 +80,7 @@ const Footer = ({footerSetting = {}}) => {
                             </div>
                         )}
 
-                        <div className="footer-top ax-section-gap">
+                        <div className="footer-top thdsecGap">
                             <div className="container">
                                 <div className="row">
                                     <div

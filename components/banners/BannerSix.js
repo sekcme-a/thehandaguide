@@ -78,7 +78,7 @@ const BannerSix = (
                                 <div className="thd_imgRoup">
                                     <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                                     <Image
-                                            style={{border:"1px solid black", borderRadius:"10px"}}
+                                            style={{overflow:"hidden",borderRadius:"10px"}}
                                             width={310}
                                             height={556}
                                             className="thdImg_as"

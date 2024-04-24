@@ -73,7 +73,7 @@ const About = () => {
 
                 <div
                     ref={ref}
-                    className="thdAre ax-section-gap bg-color-white"
+                    className="thdAre thdsecGap bg-color-white"
                 >
                     <div className="container">
                         <div className="row d-flex flex-wrap axil-featured row--40">
@@ -83,6 +83,7 @@ const About = () => {
                                         <Image
                                             width={801}
                                             height={712}
+                                            style={{objectFit:"contain"}}
                                             className="image w-100"
                                             src="/images/custom/screenshot2.png"
                                             alt="더한다 스크린샷2"

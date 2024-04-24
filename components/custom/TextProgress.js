@@ -24,7 +24,7 @@ const MainInfo = ({data}) => {
           else 
             return(
               <div key={index} className={styles.item_container}>
-                {item.img && <Image src={item.img} alt="사진" width={item.width} height={item.height} style={{marginTop:"50px", marginBottom:"15px"}} />}
+                {item.img && <Image src={item.img} alt={`${data.title}_${index}`} width={item.width} height={item.height} style={{marginTop:"50px", marginBottom:"15px", objectFit:"contain"}} loading="lazy" />}
                 <div className={item.fontWeight==="bold" ? styles.bold_text : styles.text}>{data.list==="true" && `${index+1}. `}{item.text}</div>
                 
               </div>

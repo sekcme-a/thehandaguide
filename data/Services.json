@@ -12,7 +12,8 @@
     "role":"common",
     "description": "더한다 관리자에 회원가입하는 방법입니다.",
     "category": "회원가입",
-    "slug": "회원가입",
+    "categorySlug": "signin",
+    "slug": "signin",
     "textProgress":{
       "title":"회원가입",
       "list":"false",
@@ -71,7 +72,8 @@
     "role":"common",
     "description": "더한다 관리자의 초기화면인 대쉬보드입니다.",
     "category": "더한다 소개",
-    "slug": "대쉬보드",
+    "categorySlug": "intro",
+    "slug": "dashboard",
     "textProgress":{
       "title":"대쉬보드",
       "list":"false",
@@ -87,6 +89,7 @@
       ]
     }
   },
+
   {
     "id": 3,
     "imageLayer": "/images/icons/layer.svg",
@@ -100,7 +103,8 @@
     "role":"common",
     "description": "프로그램 유형 설정 방법입니다.",
     "category": "프로그램 유형",
-    "slug": "프로그램 유형",
+    "categorySlug": "programtype",
+    "slug": "type",
     "textProgress":{
       "title":"프로그램 유형",
       "list":"false",
@@ -147,7 +151,8 @@
     "role":"common",
     "description": "프로그램 유형 편집 방법입니다.",
     "category": "프로그램 유형",
-    "slug": "프로그램 유형 편집",
+    "categorySlug": "programtype",
+    "slug": "edit",
     "textProgress":{
       "title":"프로그램 유형 편집",
       "list":"false",
@@ -194,7 +199,8 @@
     "role":"common",
     "description": "프로그램 유형 삭제 방법입니다.",
     "category": "프로그램 유형",
-    "slug": "프로그램 유형 삭제",
+    "categorySlug": "programtype",
+    "slug": "delete",
     "textProgress":{
       "title":"프로그램 유형 삭제",
       "list":"false",
@@ -241,7 +247,8 @@
     "role":"common",
     "description": "프로그램을 생성하는 방법입니다.",
     "category": "프로그램 생성",
-    "slug": "게시물 관리",
+    "categorySlug": "programcreate",
+    "slug": "manage",
     "textProgress":{
       "title":"프로그램 생성",
       "list":"false",
@@ -311,7 +318,8 @@
     "role":"common",
     "description": "프로그램 생성 시 폼을 작성하시는 방법입니다.",
     "category": "프로그램 생성",
-    "slug": "폼 작성",
+    "categorySlug": "programcreate",
+    "slug": "form",
     "textProgress":{
       "title":"폼 작성",
       "list":"false",
@@ -376,7 +384,8 @@
     "role":"common",
     "description": "프로그램을 저장 및 게재하는 방법입니다.",
     "category": "프로그램 생성",
-    "slug": "저장 및 게재",
+    "categorySlug": "programcreate",
+    "slug": "submit",
     "textProgress":{
       "title":"저장 및 게재",
       "list":"false",
@@ -465,7 +474,8 @@
     "role":"common",
     "description": "프로그램의 신청결과를 보는 방법입니다.",
     "category": "프로그램 관리",
-    "slug": "프로그램 결과보기",
+    "categorySlug": "manage",
+    "slug": "result",
     "textProgress":{
       "title":"프로그램 결과보기",
       "list":"false",
@@ -505,7 +515,8 @@
     "role":"common",
     "description": "프로그램 알림을 사용자들에게 보내는 방법입니다.",
     "category": "프로그램 관리",
-    "slug": "프로그램 알림 보내기",
+    "categorySlug": "manage",
+    "slug": "alarm",
     "textProgress":{
       "title":"프로그램 알림 보내기",
       "list":"false",
@@ -552,7 +563,8 @@
     "role":"common",
     "description": "프로그램 참여 / 미참여 처리 방법입니다.",
     "category": "프로그램 관리",
-    "slug": "프로그램 참여 / 미참여 처리",
+    "categorySlug": "manage",
+    "slug": "participate",
     "textProgress":{
       "title":"프로그램 참여 / 미참여 처리",
       "list":"false",
@@ -587,7 +599,8 @@
     "role":"common",
     "description": "프로그램 후기 작성 설정 방법입니다.",
     "category": "프로그램 관리",
-    "slug": "프로그램 후기 작성",
+    "categorySlug": "manage",
+    "slug": "comment",
     "textProgress":{
       "title":"프로그램 후기 작성",
       "list":"false",
@@ -646,7 +659,8 @@
     "role":"common",
     "description": "프로그램 후기 확인 방법입니다.",
     "category": "프로그램 관리",
-    "slug": "프로그램 후기 확인",
+    "categorySlug": "manage",
+    "slug": "commentresult",
     "textProgress":{
       "title":"프로그램 후기 확인",
       "list":"false",
@@ -681,7 +695,8 @@
     "role":"common",
     "description": "사용자들에게 어플 알림을 보내는 방법입니다.",
     "category": "알림 보내기",
-    "slug": "알림 보내기",
+    "categorySlug": "alarm",
+    "slug": "send",
     "textProgress":{
       "title":"알림 보내기",
       "list":"false",
@@ -722,50 +737,51 @@
     "role":"common",
     "description": "사용자들의 데이터를 확인하는 방법입니다.",
     "category": "사용자 데이터 확인",
-    "slug": "사용자 데이터 확인",
+    "categorySlug": "userdata",
+    "slug": "look",
     "textProgress":{
       "title":"사용자 데이터 확인",
       "list":"false",
       "role":"common",
       "step":[
         {
-          "img": "/images/version2/6/1.png",
+          "img": "/images/version2/7/1.png",
           "width":"900",
           "height":"500",
           "text":"1. 우리 기관을 이용하고 있는 사용자를 확인하려면 ‘사용자 관리’ - ‘사용자 목록’으로 접속합니다.\n\n‘사용자 현황’은 우리 기관의 컨텐츠를 1회 이상 사용한 사용자가 표시 됩니다.\n사용자를 더블 클릭하면 해당 사용자의 정보를 확인할 수 있습니다.\n개인정보 및 민감정보는 개인정보보호 담당자 지정 등으로 정보 유출을 방지하여야 하며, 개인정보 보호법 등 관련 법을 위반하여선 안 됩니다."
         },
         {
-          "img": "/images/version2/6/2.png",
+          "img": "/images/version2/7/2.png",
           "width":"900",
           "height":"500",
           "text":"2. 특정 사용자를 클릭하면 사용자의 정보를 확인하고 관리할 수 있습니다.\n‘OVERVIEW’를 통해 사용자가 회원가입 시 입력한 정보를 확인할 수 있습니다."
         },
         {
-          "img": "/images/version2/6/3.png",
+          "img": "/images/version2/7/3.png",
           "width":"900",
           "height":"500",
           "text":"3. CHAT 기능을 활용해 해당 사용자에게 메시지를 보낼 수 있습니다.\n채팅 메시지 발송은 별도의 알림 기능이 없으며 ‘한다포인트’를 소비하지 않습니다."
         },
         {
-          "img": "/images/version2/6/4.png",
+          "img": "/images/version2/7/4.png",
           "width":"900",
           "height":"500",
           "text":"4. FAMILY 기능은 사용자가 등록한 가족구성원을 보여줍니다."
         },
         {
-          "img": "/images/version2/6/5.png",
+          "img": "/images/version2/7/5.png",
           "width":"900",
           "height":"500",
           "text":"5. TIMELINE 기능은 해당 사용자가 기관 프로그램에 신청한 기록을 보여줍니다.\n타임라인은 필터링 기능 및 엑셀 파일로 추출이 가능합니다."
         },
         {
-          "img": "/images/version2/6/6.png",
+          "img": "/images/version2/7/6.png",
           "width":"900",
           "height":"500",
           "text":"6. COMMENTS 기능은 해당 사용자의 프로그램 참여율과 참여도를 보여줍니다.\n유저 참여도 및 프로그램 별 담당자의 유저 메모 관리가 가능합니다."
         },
         {
-          "img": "/images/version2/6/7.png",
+          "img": "/images/version2/7/7.png",
           "width":"900",
           "height":"500",
           "text":"7. MEMO 기능은 해당 유저에 대한 메모를 작성하는 기능을 제공합니다.\n같은 기관 내 관리자가 자유롭게 메모하여 해당 유저에게 높은 수준의 서비스를 제공할 수 있도록 도와줍니다."
@@ -787,5 +803,7 @@
 
 
 
+
+ 
   
 ]

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TeamOne = () => {
     return (
-        <div className="thd_teamZone shape-position ax-section-gap bg-color-white">
+        <div className="thd_teamZone shape-position thdsecGap bg-color-white">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-xl-6">
