@@ -28,32 +28,30 @@ const Footer = ({footerSetting = {}}) => {
             }`}
         >
             <div
-                className={
-                    !footerSettings.showCopyrightOnly && footerSettings.style !== "three"
-                        ? "bg_image--2"
-                        : ""
+                className={"bg_image--2"
                 }
             >
                 {!footerSettings.showCopyrightOnly && (
                     <>
                         {footerSettings.style !== "three" ? (
-                            <div className="ft-social-icon-wrapper thdsecGapTop">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-lg-12">
-                                            <ul className="ft-social-share d-flex justify-content-center liststyle flex-wrap">
-                                                {FooterMenu.social?.map((socialItem, index) => (
-                                                    <li key={`social-${index}`}>
-                                                        <a href={socialItem.url} target="_blank" rel="noreferrer">
-                                                            <i className={`fab ${socialItem.icon}`}/>
-                                                        </a>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <></>
+                            // <div className="ft-social-icon-wrapper thdsecGapTop">
+                            //     <div className="container">
+                            //         <div className="row">
+                            //             <div className="col-lg-12">
+                            //                 <ul className="ft-social-share d-flex justify-content-center liststyle flex-wrap">
+                            //                     {FooterMenu.social?.map((socialItem, index) => (
+                            //                         <li key={`social-${index}`}>
+                            //                             <a href={socialItem.url} target="_blank" rel="noreferrer">
+                            //                                 <i className={`fab ${socialItem.icon}`}/>
+                            //                             </a>
+                            //                         </li>
+                            //                     ))}
+                            //                 </ul>
+                            //             </div>
+                            //         </div>
+                            //     </div>
+                            // </div>
                         ) : (
                             <div className="axil-call-to-action callaction-style-2 pt--110 pt_sm--60 pt_md--80">
                                 <div className="container">
@@ -99,12 +97,14 @@ const Footer = ({footerSetting = {}}) => {
                                         >
                                             {footerSettings.style !== "three" ? (
                                                 <>
-                                                    <h2>Get in touch!</h2>
+                                                    <h2 style={{marginBottom:"40px"}}>주식회사 더한다</h2>
                                                     <p>
-                                                        Fusce varius&sbquo; dolor tempor interdum tristique&sbquo; dui
-                                                        urna <br/> bibendum magna&sbquo; ut ullamcorper purus
+                                                        등록번호: 557-88-02900<br />
+                                                        대표자: 강성혁<br />
+                                                        법인등록번호: 134811-0784993<br />
+                                                        {`경기도 화성시 동탄중심상가2길 8, 4층 401호 라15호(반송동, 로하스애비뉴)`}
                                                     </p>
-                                                    <div className="axil-newsletter">
+                                                    {/* <div className="axil-newsletter">
                                                         <form className="newsletter-form" action="#">
                                                             <input type="email" placeholder="Email"/>
                                                             <a className="thdButtt thdBut_invisi" href="#">
@@ -112,7 +112,7 @@ const Footer = ({footerSetting = {}}) => {
                                                                 <span className="button-icon"/>
                                                             </a>
                                                         </form>
-                                                    </div>
+                                                    </div> */}
                                                 </>
                                             ) : (
                                                 <>
@@ -152,7 +152,7 @@ const Footer = ({footerSetting = {}}) => {
                                         }`}
                                     >
                                         <div className="footer-widget-item">
-                                            <h6 className="title">Services</h6>
+                                            <h6 className="title">Pages</h6>
                                             <div className="footer-menu-container">
                                                 <ul
                                                     className={`ft-menu liststyle link-hover ${
@@ -179,7 +179,7 @@ const Footer = ({footerSetting = {}}) => {
                                         }`}
                                     >
                                         <div className="footer-widget-item">
-                                            <h6 className="title">Resourses</h6>
+                                            <h6 className="title">Guide</h6>
                                             <div className="footer-menu-container">
                                                 <ul
                                                     className={`ft-menu liststyle link-hover ${
@@ -198,36 +198,7 @@ const Footer = ({footerSetting = {}}) => {
                                         </div>
                                     </div>
 
-                                    <div
-                                        className={`${
-                                            footerSettings.style === "three"
-                                                ? "col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mt_md--30 mt_sm--30"
-                                                : "col-xl-1 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30"
-                                        }`}
-                                    >
-                                        <div
-                                            className={`footer-widget-item ${
-                                                footerSettings.style !== "three" ? "widget-support" : ""
-                                            }`}
-                                        >
-                                            <h6 className="title">Support</h6>
-                                            <div className="footer-menu-container">
-                                                <ul
-                                                    className={`ft-menu liststyle link-hover ${
-                                                        footerSettings.style === "three"
-                                                            ? "color-var--2"
-                                                            : ""
-                                                    }`}
-                                                >
-                                                    {FooterMenu.support?.map((menuItem, index) => (
-                                                        <li key={`footer-support-${index}`}>
-                                                            <Link legacyBehavior href={menuItem.url}>{menuItem.title}</Link>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -239,25 +210,7 @@ const Footer = ({footerSetting = {}}) => {
                         <div className="row row--0 ptb--20 axil-basic-thine-line">
                             <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div className="inner text-center text-md-start">
-                                    <p>© 2022. All rights reserved by Your Company.</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div className="quick-contact">
-                                    <ul
-                                        className={`link-hover d-flex justify-content-center justify-content-md-end liststyle ${
-                                            footerSettings.style === "three" ? "color-var--2" : ""
-                                        }`}
-                                    >
-                                        <li>
-                                            <Link legacyBehavior data-hover="Privacy Policy" href="/privacy-policy">
-                                                Privacy Policy
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link legacyBehavior href="#">Terms of Use</Link>
-                                        </li>
-                                    </ul>
+                                    <p>© 2024. All rights reserved by 더한다</p>
                                 </div>
                             </div>
                         </div>

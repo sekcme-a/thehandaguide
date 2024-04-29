@@ -7,6 +7,7 @@ import '../assets/css/plugins/icomoon.css';
 import '../assets/css/plugins/plugins.css';
 import '../assets/scss/style.scss';
 import 'style/custom.css'
+import Footer from 'components/layouts/Footer';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -17,7 +18,12 @@ function MyApp({ Component, pageProps }) {
     });
   }, []);
 
-  return <Component {...pageProps} />;
+  return(
+    <>
+      <Component {...pageProps} />
+      <Footer />
+    </>
+  )
 }
 
 export default MyApp;

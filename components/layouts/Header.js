@@ -103,7 +103,6 @@ const Header = ({headerSetting = {}}) => {
                                 <div className="logo">
                                     <Link legacyBehavior href="/">
                                         <a>
-                                            {/* <Logo variant={headerSettings.style === 'four' ? 'two' : 'one'}/> */}
                                             <Logo />
                                         </a>
                                     </Link>
@@ -124,67 +123,7 @@ const Header = ({headerSetting = {}}) => {
                                     )}
 
                                     <div className={`axil-header-extra d-flex align-items-center`}>
-                                        {/* {(headerSettings.style !== "three" && headerSettings.style !== "four") && (
-                                            <div className="ax-search-area ml--40 ml_sm--10 hide_menu">
-                                                <button
-                                                    className="p-0 border-0 search-trigger"
-                                                    onClick={toggleSearch}
-                                                >
-                                                    <i className="fas fa-search"></i>
-                                                </button>
-                                            </div>
-                                        )} */}
-
-                                        {/* {(headerSettings.style !== "three" && headerSettings.style !== "four") && (
-                                            <div className="ax-hamburger ml--40 ml_sm--10 d-none d-lg-block ">
-                                                <button
-                                                    className="axil-menuToggle ax-hamburger-trigger"
-                                                    onClick={toggleSideNav}
-                                                >
-                                                    <span/>
-                                                    <span/>
-                                                    <span/>
-                                                </button>
-                                            </div>
-                                        )} */}
-
-                                        {/* {headerSettings.style === "three" && (
-                                            <div className="d-none d-md-block hide_menu" >
-                                                <ul className="axil-social-icons d-flex liststyle align-items-center">
-                                                    <li>
-                                                        <a href="#">
-                                                            <i className="fab fa-facebook-f"/>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i className="fab fa-twitter"/>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i className="fab fa-pinterest-p"/>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i className="fab fa-linkedin-in"/>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        )} */}
-
-                                        {/* {headerSettings.style === "four" && (
-                                            <div className="ax-header-button ml--40 ml_lg--10 d-none d-sm-block hide_menu">
-                                                <Link legacyBehavior href="/contact">
-                                                    <a className="thdButtt btn-solid btn-extra02-color">
-                                                        <span className="button-text">Let&lsquo;s Talk</span>
-                                                        <span className="button-icon"/>
-                                                    </a>
-                                                </Link>
-                                            </div>
-                                        )} */}
+                                      
 
                                         <div
                                             className={`${

@@ -10,21 +10,19 @@
     {"type":  "behance", "icon": "fa-behance", "url":  "https://www.behance.net/"}
   ],
   "services": [
-    {"title":  "Logo & Branding", "url":  "/services/design/logo-and-branding"},
-    {"title":  "Website Development", "url":  "/services/design/website-design"},
-    {"title":  "Mobile App Development", "url":  "/services/design/mobile-app-design"},
-    {"title":  "Search Engine Optimization", "url":  "/services/online-marketing/search-engine-optimization"},
-    {"title":  "Pay-Per-Click", "url":  "/services/online-marketing/pay-per-click"},
-    {"title":  "Social Media Marketing", "url":  "/services/online-marketing/social-media-marketing"}
+    {"title":  "Home", "url":  "/"},
+    {"title":  "영상 가이드", "url":  "https://www.youtube.com/@TheHanda_net"},
+    {"title":  "Guide", "url":  "/about"},
+    {"title":  "Pricing", "url":  "/pricing"}
   ],
   "resources": [
-    {"title":  "Blog", "url":  "/blog"},
-    {"title":  "Case Studies", "url":  "/case-study"},
-    {"title":  "Portfolio", "url":  "/portfolio"}
+    {"title":  "회원가입", "url":  "/services/signin/signin"},
+    {"title":  "대쉬보드", "url":  "/services/intro/dashboard"},
+    {"title":  "프로그램 유형", "url":  "/services/programtype/type"},
+    {"title":  "게시물 관리", "url":  "/services/programcreate/manage"},  
+    {"title":  "알림 보내기", "url":  "/services/alarm/send"}
   ],
   "support": [
-    {"title":  "Contact", "url":  "/contact"},
-    {"title":  "Privacy Policy", "url":  "/privacy-policy"},
-    {"title":  "Sitemap", "url":  "#"}
+    {"title":  "Pricing", "url":  "/pricing"}
   ]
 }
