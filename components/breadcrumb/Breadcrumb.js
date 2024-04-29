@@ -14,7 +14,7 @@ const Breadcrumb = ({
             <div className="inner">
               <ul className="axil-breadcrumb liststyle d-flex">
                 <li className="thd_Bitem">
-                  <Link legacyBehavior href={rootUrl}>{root}</Link>
+                  <Link href={rootUrl}>{root}</Link>
                 </li>
                 <li className="thd_Bitem active" aria-current="page">
                   {current}

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styles from "./styles/index.module.css"
 import Image from "next/image"
 
@@ -17,7 +18,7 @@ const MainInfo = ({data}) => {
               <div key={index} className={styles.item_container}>
                 <div className={item.fontWeight==="bold" ? styles.bold_text : styles.text}>{data.list==="true" && `${index+1}. `}{item.text}</div>
                 <div className={styles.url_container}>
-                  <a href={item.url}>여기</a><p>를 눌러 해당 페이지로 이동</p>
+                  <Link href={item.url}>여기</Link><p>를 눌러 해당 페이지로 이동</p>
                 </div>
               </div>
             )

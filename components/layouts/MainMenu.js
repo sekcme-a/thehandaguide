@@ -11,12 +11,12 @@ const MainMenu = () => {
                     className={menu.hasChildren ? "has-dropdown" : ""}
                     key={`menu-item-${menuIndex}`}
                 >
-                    <Link legacyBehavior href={menu.url}>{menu.title}</Link>
+                   <a href={menu.url}>{menu.title}</a>
                     {menu.hasChildren && (
                         <ul className="axil-submenu">
                             {menu.clildrens?.map((submenuItem, submenuIndex) => (
                                 <li key={`submenu-item-${submenuIndex}`}>
-                                    <Link legacyBehavior href={submenuItem.url}>{submenuItem.title}</Link>
+                                    <Link href={submenuItem.url}>{submenuItem.title}</Link>
                                 </li>
                             ))}
                         </ul>

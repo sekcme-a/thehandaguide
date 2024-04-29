@@ -32,6 +32,12 @@ const BannerSix = (
                                         <span className="button-icon"/>
                                     </a>
                                 </Link>
+                                <Link legacyBehavior href={`https://www.youtube.com/@TheHanda_net`} >
+                                    <a className="thdButtt btn-large thdBut_invisi" target="_blank" style={{marginLeft:"10px"}}>
+                                        <span className="button-text">영상 가이드 보기</span>
+                                        <span className="button-icon"/>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
