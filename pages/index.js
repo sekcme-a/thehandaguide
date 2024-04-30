@@ -10,6 +10,7 @@ import TeamOne from '../components/teams/TeamOne';
 import AndroidIcon from '@mui/icons-material/Android';
 import AppleIcon from '@mui/icons-material/Apple';
 import HeadMeta from 'components/custom/HeadMeta';
+import Video from 'components/custom/Video';
 
 const About = () => {
     const [ref, inView] = useInView({
@@ -71,6 +72,7 @@ const About = () => {
             <main className="thehanda-wrapper">
                 <BannerSeven/>
 
+                <Video />
                 <div
                     ref={ref}
                     className="thdAre thdsecGap bg-color-white"
