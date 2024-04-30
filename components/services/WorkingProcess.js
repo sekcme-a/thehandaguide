@@ -38,7 +38,7 @@ const WorkingProcess = ({process}) => {
                                 >
                                     <div className="image thdImg_as">
                                         <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
-                                            <Image width={492} height={497} src={strategy.image} alt="Process Images"/>
+                                            <Image width={492} height={497} src={strategy.image} alt="Process Images" style={{objectFit:"contain"}}/>
                                         </Tilt>
                                     </div>
                                 </div>
