@@ -163,7 +163,7 @@ const Header = ({headerSetting = {}}) => {
 
             <MobileMenu/>
 
-            <SideNav toggleSidenav={toggleSideNav}/>
+            {/* <SideNav toggleSidenav={toggleSideNav}/> */}
         </>
     );
 };
