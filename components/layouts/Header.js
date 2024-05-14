@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import HeaderSearch from './HeaderSearch';
 import MainMenu from './MainMenu';
 import MobileMenu from './MobileMenu';
-import SideNav from './SideNav';
+// import SideNav from './SideNav';
 import ThemeSwitcher from './ThemeSwitcher';
 // import Logo from '../common/Logo';
 import Logo from "components/custom/Logo"
