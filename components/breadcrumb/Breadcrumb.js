@@ -5,7 +5,7 @@ const Breadcrumb = ({
   root = "Home",
   rootUrl = "/home-01",
   current = "Blog",
-  emailVerifyPage = false,
+  customNav,
   subtitle
 }) => {
   return (
@@ -15,9 +15,9 @@ const Breadcrumb = ({
           <div className="col-lg-12">
             <div className="inner">
               <ul className="axil-breadcrumb liststyle d-flex">
-                {emailVerifyPage 
+                {customNav 
                 ? 
-                <li className="thd_Bitem active">이메일 인증</li>
+                <li className="thd_Bitem active">{customNav}</li>
                 :
                 <>
                   <li className="thd_Bitem">

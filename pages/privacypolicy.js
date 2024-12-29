@@ -5,12 +5,15 @@ import { TERMS_DATA } from 'data/TERMS_DATA';
 
 const PrivacyPolicy = () => {
     return (
-        <Layout>
+        <Layout hideMenu>
             <Head>
                 <title>개인정보 처리방침 || 더한다 - 우리가족 행복비서</title>
             </Head>
 
-            <Breadcrumb title="개인정보 처리방침" current="개인정보 처리방침"/>
+            <Breadcrumb 
+                customNav="개인정보 처리방침" 
+                title="개인정보 처리방침" 
+            />
 
             <main className="page-wrappper">
                 <div className="privacy-policy-area ax-section-gap">

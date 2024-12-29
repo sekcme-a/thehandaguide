@@ -24,7 +24,10 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
       <Component {...pageProps} />
-      {!pathname.includes("email-verified") && <Footer footerSetting={{}} />}
+      {!pathname.includes("email-verified") &&
+        !pathname.includes("privacypolicy") &&
+        !pathname.includes("app-use") &&
+        <Footer footerSetting={{}} />}
     </>
   )
 }
