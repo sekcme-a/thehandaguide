@@ -8,7 +8,7 @@ import ThemeSwitcher from './ThemeSwitcher';
 // import Logo from '../common/Logo';
 import Logo from "components/custom/Logo"
 
-const Header = ({headerSetting = {}}) => {
+const Header = ({headerSetting = {}, hideMenu = false}) => {
     const [headerSettings, setHeaderSettings] = useState({});
 
     const headerContainerClass = () => {
@@ -109,6 +109,7 @@ const Header = ({headerSetting = {}}) => {
                                 </div>
                             </div>
                             
+                            {!hideMenu &&
                             <div className={headerSettings.rightColumn}>
                                 <div
                                     className={`mainmenu-wrapepr ${
@@ -156,6 +157,7 @@ const Header = ({headerSetting = {}}) => {
                                     </div>
                                 </div>
                             </div>
+                            }
                         </div>
                     </div>
                 </div>

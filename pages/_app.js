@@ -8,8 +8,11 @@ import '../assets/css/plugins/plugins.css';
 import '../assets/scss/style.scss';
 import 'style/custom.css'
 import Footer from 'components/layouts/Footer';
+import { usePathname } from 'next/navigation';
 
 function MyApp({ Component, pageProps }) {
+  const pathname = usePathname()
+  
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle');
 
@@ -21,7 +24,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
       <Component {...pageProps} />
-      <Footer footerSetting={{}} />
+      {!pathname.includes("email-verified") && <Footer footerSetting={{}} />}
     </>
   )
 }

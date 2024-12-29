@@ -5,6 +5,8 @@ const Breadcrumb = ({
   root = "Home",
   rootUrl = "/home-01",
   current = "Blog",
+  emailVerifyPage = false,
+  subtitle
 }) => {
   return (
     <div className="thd-banner-bcZone thdDefStyle pt--170 pb--70 theme-gradient">
@@ -13,14 +15,22 @@ const Breadcrumb = ({
           <div className="col-lg-12">
             <div className="inner">
               <ul className="axil-breadcrumb liststyle d-flex">
-                <li className="thd_Bitem">
-                  <Link href={rootUrl}>{root}</Link>
-                </li>
-                <li className="thd_Bitem active" aria-current="page">
-                  {current}
-                </li>
+                {emailVerifyPage 
+                ? 
+                <li className="thd_Bitem active">이메일 인증</li>
+                :
+                <>
+                  <li className="thd_Bitem">
+                    <Link href={rootUrl}>{root}</Link>
+                  </li>
+                  <li className="thd_Bitem active" aria-current="page">
+                    {current}
+                  </li>
+                </>
+                }
               </ul>
               <h1 className="thdT ">{title}</h1>
+              {subtitle && <p style={{color:"black"}}>{subtitle}</p>}
             </div>
           </div>
         </div>
