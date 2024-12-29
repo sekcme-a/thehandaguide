@@ -10,7 +10,7 @@ const EmailVerified = () => {
     <>
      <Layout hideMenu>
             <Head>
-                <title>개인정보 처리방침 || 더한다 - 우리가족 행복비서</title>
+                <title>이메일이 인증되었습니다 || 더한다 - 우리가족 행복비서</title>
             </Head>
 
             <Breadcrumb 
