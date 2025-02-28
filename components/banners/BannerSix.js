@@ -26,7 +26,7 @@ const BannerSix = (
                             <div className="content">
                                 <h1 className={bannerTitleClass} style={{wordBreak:"keep-all", whiteSpace:"pre-line"}}>{title}</h1>
                                 <p className="thdsubt2 preline keep-all">{subtitle}</p>
-                                <Link legacyBehavior href={`https://thehanda.netlify.app`}>
+                                <Link legacyBehavior href={`https://thehanda-admin2.vercel.app`}>
                                     <a className="thdButtt btn-large thdBut_invisi" target="_blank">
                                         <span className="button-text">관리자페이지로 이동</span>
                                         <span className="button-icon"/>
