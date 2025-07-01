@@ -1,15 +1,17 @@
-.preline{
-  white-space:pre-line;
+/* app/globals.css */
+@import "tailwindcss";
+
+.preline {
+  white-space: pre-line;
 }
-.keep-all{
+.keep-all {
   word-break: keep-all;
 }
-.role_container{
+.role_container {
   /* margin-top: -20px; */
   margin-bottom: 30px;
 }
-.role{
-
+.role {
   border-radius: 5px;
   color: white;
   display: inline-block;
@@ -17,24 +19,24 @@
   font-size: 13px;
   font-weight: 700;
 }
-.role.common{
+.role.common {
   background-color: gray;
 }
-.role.high{
+.role.high {
   background-color: blue;
 }
-.role.super{
+.role.super {
   background-color: black;
 }
 
-@media (min-width: 991px){
-  .hide_menu{
+@media (min-width: 991px) {
+  .hide_menu {
     display: none;
   }
 }
 
-@media(max-width: 991px){
-  .custom-for-image{
+@media (max-width: 991px) {
+  .custom-for-image {
     display: none !important;
   }
 }
