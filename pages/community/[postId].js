@@ -61,8 +61,8 @@ const Community = () => {
   return (
     <div className="flex justify-center bg-black w-screen h-full">
       <HeadMeta
-        title={`${post.title} - 더한다`}
-        description={post.title}
+        title={`${post?.title} - 더한다`}
+        description={post?.title}
         url={`https://thehanda.net/group/${postId}`}
       />
       <div className="w-full max-w-md bg-white text-black min-h-screen flex flex-col">
