@@ -165,13 +165,13 @@ const Group = () => {
       </div>
 
       <BottomAppRedirect
-        scheme={`com.zzsoft.thehanda://(screen)/community/post/${postId}`}
+        scheme={`com.zzsoft.thehanda://(screen)/group/post/${postId}`}
         isGroup
       />
       <AppRedirectModal
         showModal={showModal}
         handleClose={() => setShowModal(false)}
-        scheme={`com.zzsoft.thehanda://(screen)/community/post/${postId}`}
+        scheme={`com.zzsoft.thehanda://(screen)/group/post/${postId}`}
       />
     </div>
   );
